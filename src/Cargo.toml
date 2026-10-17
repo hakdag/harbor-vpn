@@ -1,0 +1,21 @@
+[workspace]
+members = ["crates/ikev2-wire", "crates/vpn-config", "crates/vpn-observability", "bins/ikev2d"]
+exclude = ["fuzz"]
+resolver = "3"
+
+[workspace.package]
+edition = "2024"
+rust-version = "1.97"
+version = "0.1.0"
+
+[workspace.dependencies]
+ikev2-wire = { path = "crates/ikev2-wire" }
+vpn-config = { path = "crates/vpn-config" }
+vpn-observability = { path = "crates/vpn-observability" }
+serde = { version = "1", features = ["derive"] }
+toml = "0.9"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["json"] }
+
+[workspace.lints.rust]
+unsafe_code = "forbid"

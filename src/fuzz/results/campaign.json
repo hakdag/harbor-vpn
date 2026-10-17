@@ -1,0 +1,65 @@
+[
+  {
+    "target": "message",
+    "command": [
+      "cargo",
+      "+nightly",
+      "fuzz",
+      "run",
+      "message",
+      "--",
+      "-max_total_time=1800",
+      "-max_len=65536",
+      "-timeout=10",
+      "-rss_limit_mb=512",
+      "-seed=20261017",
+      "-print_final_stats=1"
+    ],
+    "started_utc": "2026-10-17T11:30:37.863054+00:00",
+    "observed_wall_seconds": 1802.26,
+    "exit_status": 1,
+    "log": "fuzz/results/message.log"
+  },
+  {
+    "target": "sa",
+    "command": [
+      "cargo",
+      "+nightly",
+      "fuzz",
+      "run",
+      "sa",
+      "--",
+      "-max_total_time=1800",
+      "-max_len=65536",
+      "-timeout=10",
+      "-rss_limit_mb=512",
+      "-seed=20261017",
+      "-print_final_stats=1"
+    ],
+    "started_utc": "2026-10-17T11:30:37.863395+00:00",
+    "observed_wall_seconds": 1802.26,
+    "exit_status": 1,
+    "log": "fuzz/results/sa.log"
+  },
+  {
+    "target": "structured",
+    "command": [
+      "cargo",
+      "+nightly",
+      "fuzz",
+      "run",
+      "structured",
+      "--",
+      "-max_total_time=1800",
+      "-max_len=65536",
+      "-timeout=10",
+      "-rss_limit_mb=512",
+      "-seed=20261017",
+      "-print_final_stats=1"
+    ],
+    "started_utc": "2026-10-17T11:30:37.863656+00:00",
+    "observed_wall_seconds": 1802.26,
+    "exit_status": 1,
+    "log": "fuzz/results/structured.log"
+  }
+]

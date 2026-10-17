@@ -1,0 +1,10 @@
+{
+  "stable_rustc": "rustc 1.97.1 (8bab26f4f 2026-07-14)\nbinary: rustc\ncommit-hash: 8bab26f4f68e0e26f0bb7960be334d5b520ea452\ncommit-date: 2026-07-14\nhost: x86_64-unknown-linux-gnu\nrelease: 1.97.1\nLLVM version: 22.1.6",
+  "nightly_rustc": "rustc 1.101.0-nightly (5d8fec066 2026-10-16)\nbinary: rustc\ncommit-hash: 5d8fec0669a64607db9ccbf663e7c23125bf4748\ncommit-date: 2026-10-16\nhost: x86_64-unknown-linux-gnu\nrelease: 1.101.0-nightly\nLLVM version: 23.1.4",
+  "stable_cargo": "cargo 1.97.1 (c980f4866 2026-06-30)",
+  "nightly_cargo": "cargo 1.101.0-nightly (3960fa69b 2026-10-12)",
+  "cargo_fuzz": "cargo-fuzz 0.13.2",
+  "recorded_utc": "2026-10-17T15:36:49.505341+00:00",
+  "python": "3.14.8",
+  "execution_context": "long campaign launched with sandbox_permissions=require_escalated; no sanitizer disabled"
+}

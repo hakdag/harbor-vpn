@@ -1,0 +1,22 @@
+{
+  "stable": "rustc 1.97.1 (8bab26f4f 2026-07-14)",
+  "nightly": "rustc 1.101.0-nightly (5d8fec066 2026-10-16)",
+  "cargo_fuzz": "cargo-fuzz 0.13.2",
+  "host": "Linux-7.1.8-arch1-3-x86_64-with-glibc2.44",
+  "os_release": "NAME=\"Arch Linux\"\nPRETTY_NAME=\"Arch Linux\"\nID=arch\nBUILD_ID=rolling\nANSI_COLOR=\"38;2;23;147;209\"\nHOME_URL=\"https://archlinux.org/\"\nDOCUMENTATION_URL=\"https://wiki.archlinux.org/\"\nSUPPORT_URL=\"https://bbs.archlinux.org/\"\nBUG_REPORT_URL=\"https://gitlab.archlinux.org/groups/archlinux/-/issues\"\nPRIVACY_POLICY_URL=\"https://terms.archlinux.org/docs/privacy-policy/\"\nLOGO=archlinux-logo\n",
+  "sha256": {
+    "Cargo.lock": "9f3b79770c91fea13f4d1e47c9d74d4617e1fcd972e61bb37051601d41ac58c7",
+    "Cargo.toml": "213af2b6f4ff0b05a16e6af637ad6a208b9f637b56306ee0c2135f993b70682f",
+    "crates/ikev2-wire/src/decode.rs": "f15624d5651c99b3af35bba3137311679ab76ba5f6e9362e70392d8abbebbbec",
+    "crates/ikev2-wire/src/encode.rs": "e8b28396637d26ce9c60a7f9d6aa7831192934a5eb34616876f45a905091df8e",
+    "crates/ikev2-wire/src/lib.rs": "5e227cef5f08bb49a4c21dc87da6251b3ff68a91260a8992c1888ff5b1488619",
+    "crates/ikev2-wire/src/limits.rs": "0d692a8310b09d03485270e5827349ee0929eaed7859c7fba36ad80099a763cf",
+    "crates/ikev2-wire/src/raw.rs": "edcd6c04e612510e194dab5e2785e603b3265486f1be175787d4660c7746b3b3",
+    "crates/ikev2-wire/src/types.rs": "c4d6f2af17acbdfa392b9ed57a663adf944e7e567d64b5236cb934135ef6a462",
+    "fuzz/Cargo.lock": "90ec093f174a23814395008b6ea70761698fd9b8e75a3edaf2a13f08f23c5463",
+    "fuzz/Cargo.toml": "ebbec91b27c98fd0614ffba62e101f26194b1b51fd4b62f81aabd8fb7fc020cc",
+    "fuzz/fuzz_targets/message.rs": "036d3c5aac34d422d1e2307ec4a1ea7492070dd4d0cd22d9adc68482e3b7fd26",
+    "fuzz/fuzz_targets/sa.rs": "ef078a42ffcb84fbc0504c4972f035ec5b3705cb349d1ef549b5474a4cc53c15",
+    "fuzz/fuzz_targets/structured.rs": "20ff01c64ab59f7e45d014c1f8e2682fd39945edc4567b220577662ec8e3ba2e"
+  }
+}

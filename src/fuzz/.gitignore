@@ -1,0 +1,9 @@
+/target/
+/corpus/
+/artifacts/
+/results/**/*.log
+/results/*.log
+/__pycache__/
+
+# Preserve the approved clean-exit acceptance evidence, including sanitizer logs.
+!/results/milestone-1-acceptance-20261017/*.log

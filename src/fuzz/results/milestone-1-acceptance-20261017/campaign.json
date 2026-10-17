@@ -1,0 +1,113 @@
+[
+  {
+    "target": "message",
+    "command": [
+      "cargo",
+      "+nightly",
+      "fuzz",
+      "run",
+      "--sanitizer",
+      "address",
+      "message",
+      "--",
+      "-max_total_time=1800",
+      "-artifact_prefix=/mnt/data/projects/personal vpn/src/fuzz/results/milestone-1-acceptance-20261017/message-artifacts/",
+      "-max_len=65536",
+      "-timeout=10",
+      "-rss_limit_mb=512",
+      "-seed=20261017",
+      "-detect_leaks=1",
+      "-print_final_stats=1"
+    ],
+    "started_utc": "2026-10-17T15:28:51.209691+00:00",
+    "log": "fuzz/results/milestone-1-acceptance-20261017/message.log",
+    "ended_utc": "2026-10-17T15:58:52.479519+00:00",
+    "wall_seconds": 1801.27,
+    "exit_status": 0,
+    "completed_fuzz_seconds": 1801,
+    "statistics": {
+      "number_of_executed_units": 239955056,
+      "average_exec_per_sec": 133234,
+      "new_units_added": 60,
+      "slowest_unit_time_sec": 0,
+      "peak_rss_mb": 460
+    },
+    "sanitizer_diagnostics": [],
+    "log_sha256": "2b1ab1f72b6910d2ce05916ee8be8f779bacd91b5f4a76175a16782fa40ddb3c",
+    "passed": true
+  },
+  {
+    "target": "sa",
+    "command": [
+      "cargo",
+      "+nightly",
+      "fuzz",
+      "run",
+      "--sanitizer",
+      "address",
+      "sa",
+      "--",
+      "-max_total_time=1800",
+      "-artifact_prefix=/mnt/data/projects/personal vpn/src/fuzz/results/milestone-1-acceptance-20261017/sa-artifacts/",
+      "-max_len=65536",
+      "-timeout=10",
+      "-rss_limit_mb=512",
+      "-seed=20261017",
+      "-detect_leaks=1",
+      "-print_final_stats=1"
+    ],
+    "started_utc": "2026-10-17T15:28:51.210163+00:00",
+    "log": "fuzz/results/milestone-1-acceptance-20261017/sa.log",
+    "ended_utc": "2026-10-17T15:58:52.480270+00:00",
+    "wall_seconds": 1801.271,
+    "exit_status": 0,
+    "completed_fuzz_seconds": 1801,
+    "statistics": {
+      "number_of_executed_units": 754893731,
+      "average_exec_per_sec": 419152,
+      "new_units_added": 63,
+      "slowest_unit_time_sec": 0,
+      "peak_rss_mb": 356
+    },
+    "sanitizer_diagnostics": [],
+    "log_sha256": "0d4c3ca03ec7e4fc32df4b53821decefac200b91314e746ad94a2f3e7eeaa306",
+    "passed": true
+  },
+  {
+    "target": "structured",
+    "command": [
+      "cargo",
+      "+nightly",
+      "fuzz",
+      "run",
+      "--sanitizer",
+      "address",
+      "structured",
+      "--",
+      "-max_total_time=1800",
+      "-artifact_prefix=/mnt/data/projects/personal vpn/src/fuzz/results/milestone-1-acceptance-20261017/structured-artifacts/",
+      "-max_len=65536",
+      "-timeout=10",
+      "-rss_limit_mb=512",
+      "-seed=20261017",
+      "-detect_leaks=1",
+      "-print_final_stats=1"
+    ],
+    "started_utc": "2026-10-17T15:28:51.210532+00:00",
+    "log": "fuzz/results/milestone-1-acceptance-20261017/structured.log",
+    "ended_utc": "2026-10-17T15:58:52.480538+00:00",
+    "wall_seconds": 1801.27,
+    "exit_status": 0,
+    "completed_fuzz_seconds": 1801,
+    "statistics": {
+      "number_of_executed_units": 171518122,
+      "average_exec_per_sec": 95234,
+      "new_units_added": 0,
+      "slowest_unit_time_sec": 0,
+      "peak_rss_mb": 370
+    },
+    "sanitizer_diagnostics": [],
+    "log_sha256": "029c81c09841e8832f2357a6bbbbc018265d3a1ea1eaaaf1cfb1d7d53054f394",
+    "passed": true
+  }
+]

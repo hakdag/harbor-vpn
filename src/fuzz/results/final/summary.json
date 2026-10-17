@@ -1,0 +1,77 @@
+[
+  {
+    "target": "message",
+    "command": [
+      "cargo",
+      "+nightly",
+      "fuzz",
+      "run",
+      "message",
+      "--",
+      "-max_total_time=1800",
+      "-max_len=65536",
+      "-timeout=10",
+      "-rss_limit_mb=512",
+      "-seed=20261017",
+      "-print_final_stats=1"
+    ],
+    "started_utc": "2026-10-17T11:32:11.843189+00:00",
+    "observed_wall_seconds": 1802.28,
+    "exit_status": 1,
+    "log": "fuzz/results/final/message.log",
+    "completed_fuzz_seconds": 1801,
+    "executions": 239197438,
+    "peak_rss_mb": 389,
+    "classification": "completed fuzz loop; LeakSanitizer exit check blocked by sandbox tracing restriction"
+  },
+  {
+    "target": "sa",
+    "command": [
+      "cargo",
+      "+nightly",
+      "fuzz",
+      "run",
+      "sa",
+      "--",
+      "-max_total_time=1800",
+      "-max_len=65536",
+      "-timeout=10",
+      "-rss_limit_mb=512",
+      "-seed=20261017",
+      "-print_final_stats=1"
+    ],
+    "started_utc": "2026-10-17T11:32:11.843545+00:00",
+    "observed_wall_seconds": 1802.28,
+    "exit_status": 1,
+    "log": "fuzz/results/final/sa.log",
+    "completed_fuzz_seconds": 1801,
+    "executions": 499733745,
+    "peak_rss_mb": 295,
+    "classification": "completed fuzz loop; LeakSanitizer exit check blocked by sandbox tracing restriction"
+  },
+  {
+    "target": "structured",
+    "command": [
+      "cargo",
+      "+nightly",
+      "fuzz",
+      "run",
+      "structured",
+      "--",
+      "-max_total_time=1800",
+      "-max_len=65536",
+      "-timeout=10",
+      "-rss_limit_mb=512",
+      "-seed=20261017",
+      "-print_final_stats=1"
+    ],
+    "started_utc": "2026-10-17T11:32:11.843946+00:00",
+    "observed_wall_seconds": 1802.28,
+    "exit_status": 1,
+    "log": "fuzz/results/final/structured.log",
+    "completed_fuzz_seconds": 1801,
+    "executions": 155345206,
+    "peak_rss_mb": 400,
+    "classification": "completed fuzz loop; LeakSanitizer exit check blocked by sandbox tracing restriction"
+  }
+]

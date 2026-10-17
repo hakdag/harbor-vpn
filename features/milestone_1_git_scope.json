@@ -1,0 +1,383 @@
+{
+  "base_commit": "a076e50d897f5a1713d96e1fddfb23d34c992301",
+  "initial_index_empty": true,
+  "excluded_preexisting_tracked_changes": [
+    {
+      "path": ".cursor/commands/tm/add-dependency.md",
+      "initial_status": " D"
+    },
+    {
+      "path": ".cursor/commands/tm/add-subtask.md",
+      "initial_status": " D"
+    },
+    {
+      "path": ".cursor/commands/tm/add-task.md",
+      "initial_status": " D"
+    },
+    {
+      "path": ".cursor/commands/tm/analyze-complexity.md",
+      "initial_status": " D"
+    },
+    {
+      "path": ".cursor/commands/tm/analyze-project.md",
+      "initial_status": " D"
+    },
+    {
+      "path": ".cursor/commands/tm/auto-implement-tasks.md",
+      "initial_status": " D"
+    },
+    {
+      "path": ".cursor/commands/tm/command-pipeline.md",
+      "initial_status": " D"
+    },
+    {
+      "path": ".cursor/commands/tm/complexity-report.md",
+      "initial_status": " D"
+    },
+    {
+      "path": ".cursor/commands/tm/convert-task-to-subtask.md",
+      "initial_status": " D"
+    },
+    {
+      "path": ".cursor/commands/tm/expand-all-tasks.md",
+      "initial_status": " D"
+    },
+    {
+      "path": ".cursor/commands/tm/expand-task.md",
+      "initial_status": " D"
+    },
+    {
+      "path": ".cursor/commands/tm/fix-dependencies.md",
+      "initial_status": " D"
+    },
+    {
+      "path": ".cursor/commands/tm/help.md",
+      "initial_status": " D"
+    },
+    {
+      "path": ".cursor/commands/tm/init-project-quick.md",
+      "initial_status": " D"
+    },
+    {
+      "path": ".cursor/commands/tm/init-project.md",
+      "initial_status": " D"
+    },
+    {
+      "path": ".cursor/commands/tm/install-taskmaster.md",
+      "initial_status": " D"
+    },
+    {
+      "path": ".cursor/commands/tm/learn.md",
+      "initial_status": " D"
+    },
+    {
+      "path": ".cursor/commands/tm/list-tasks-by-status.md",
+      "initial_status": " D"
+    },
+    {
+      "path": ".cursor/commands/tm/list-tasks-with-subtasks.md",
+      "initial_status": " D"
+    },
+    {
+      "path": ".cursor/commands/tm/list-tasks.md",
+      "initial_status": " D"
+    },
+    {
+      "path": ".cursor/commands/tm/next-task.md",
+      "initial_status": " D"
+    },
+    {
+      "path": ".cursor/commands/tm/parse-prd-with-research.md",
+      "initial_status": " D"
+    },
+    {
+      "path": ".cursor/commands/tm/parse-prd.md",
+      "initial_status": " D"
+    },
+    {
+      "path": ".cursor/commands/tm/project-status.md",
+      "initial_status": " D"
+    },
+    {
+      "path": ".cursor/commands/tm/quick-install-taskmaster.md",
+      "initial_status": " D"
+    },
+    {
+      "path": ".cursor/commands/tm/remove-all-subtasks.md",
+      "initial_status": " D"
+    },
+    {
+      "path": ".cursor/commands/tm/remove-dependency.md",
+      "initial_status": " D"
+    },
+    {
+      "path": ".cursor/commands/tm/remove-subtask.md",
+      "initial_status": " D"
+    },
+    {
+      "path": ".cursor/commands/tm/remove-subtasks.md",
+      "initial_status": " D"
+    },
+    {
+      "path": ".cursor/commands/tm/remove-task.md",
+      "initial_status": " D"
+    },
+    {
+      "path": ".cursor/commands/tm/setup-models.md",
+      "initial_status": " D"
+    },
+    {
+      "path": ".cursor/commands/tm/show-task.md",
+      "initial_status": " D"
+    },
+    {
+      "path": ".cursor/commands/tm/smart-workflow.md",
+      "initial_status": " D"
+    },
+    {
+      "path": ".cursor/commands/tm/sync-readme.md",
+      "initial_status": " D"
+    },
+    {
+      "path": ".cursor/commands/tm/tm-main.md",
+      "initial_status": " D"
+    },
+    {
+      "path": ".cursor/commands/tm/to-cancelled.md",
+      "initial_status": " D"
+    },
+    {
+      "path": ".cursor/commands/tm/to-deferred.md",
+      "initial_status": " D"
+    },
+    {
+      "path": ".cursor/commands/tm/to-done.md",
+      "initial_status": " D"
+    },
+    {
+      "path": ".cursor/commands/tm/to-in-progress.md",
+      "initial_status": " D"
+    },
+    {
+      "path": ".cursor/commands/tm/to-pending.md",
+      "initial_status": " D"
+    },
+    {
+      "path": ".cursor/commands/tm/to-review.md",
+      "initial_status": " D"
+    },
+    {
+      "path": ".cursor/commands/tm/update-single-task.md",
+      "initial_status": " D"
+    },
+    {
+      "path": ".cursor/commands/tm/update-task.md",
+      "initial_status": " D"
+    },
+    {
+      "path": ".cursor/commands/tm/update-tasks-from-id.md",
+      "initial_status": " D"
+    },
+    {
+      "path": ".cursor/commands/tm/validate-dependencies.md",
+      "initial_status": " D"
+    },
+    {
+      "path": ".cursor/commands/tm/view-models.md",
+      "initial_status": " D"
+    },
+    {
+      "path": ".cursor/mcp.json",
+      "initial_status": " D"
+    },
+    {
+      "path": ".cursor/rules/cursor_rules.mdc",
+      "initial_status": " D"
+    },
+    {
+      "path": ".cursor/rules/self_improve.mdc",
+      "initial_status": " D"
+    },
+    {
+      "path": ".cursor/rules/taskmaster/dev_workflow.mdc",
+      "initial_status": " D"
+    },
+    {
+      "path": ".cursor/rules/taskmaster/taskmaster.mdc",
+      "initial_status": " D"
+    },
+    {
+      "path": ".env",
+      "initial_status": " M"
+    },
+    {
+      "path": ".env.example",
+      "initial_status": " M"
+    },
+    {
+      "path": ".gitignore",
+      "initial_status": " M"
+    },
+    {
+      "path": ".taskmaster/config.json",
+      "initial_status": " D"
+    },
+    {
+      "path": ".taskmaster/state.json",
+      "initial_status": " D"
+    },
+    {
+      "path": ".taskmaster/tasks/tasks.json",
+      "initial_status": " D"
+    },
+    {
+      "path": ".taskmaster/templates/example_prd.txt",
+      "initial_status": " D"
+    },
+    {
+      "path": ".taskmaster/templates/example_prd_rpg.txt",
+      "initial_status": " D"
+    },
+    {
+      "path": "docs/Custom_VPN_PRD.md",
+      "initial_status": " D"
+    },
+    {
+      "path": "docs/Custom_VPN_PRD_v0.2.md",
+      "initial_status": " D"
+    },
+    {
+      "path": "docs/Custom_VPN_PRD_v0.3.md",
+      "initial_status": " D"
+    },
+    {
+      "path": "docs/architecture_diagrams_and_config.md",
+      "initial_status": " M"
+    },
+    {
+      "path": "docs/network_model_spec.md",
+      "initial_status": " M"
+    },
+    {
+      "path": "docs/process_separation_spec.md",
+      "initial_status": " M"
+    },
+    {
+      "path": "docs/protocol_crypto_spec.md",
+      "initial_status": " M"
+    },
+    {
+      "path": "docs/threat_model_spec.md",
+      "initial_status": " M"
+    },
+    {
+      "path": "src/control-plane/Cargo.toml",
+      "initial_status": " D"
+    },
+    {
+      "path": "src/control-plane/src/main.rs",
+      "initial_status": " D"
+    },
+    {
+      "path": "src/ikev2-daemon/Cargo.toml",
+      "initial_status": " D"
+    },
+    {
+      "path": "src/ikev2-daemon/src/main.rs",
+      "initial_status": " D"
+    },
+    {
+      "path": "src/rust-tooling.md",
+      "initial_status": " D"
+    },
+    {
+      "path": "src/scripts/setup_ubuntu_lts.sh",
+      "initial_status": " D"
+    },
+    {
+      "path": "src/shared-types/Cargo.toml",
+      "initial_status": " D"
+    },
+    {
+      "path": "src/shared-types/src/lib.rs",
+      "initial_status": " D"
+    }
+  ],
+  "preservation": "Working-tree file contents and deletions are compared with the start-of-task baseline; excluded paths must not enter the checkpoint.",
+  "checkpoint_files": [
+    "AGENTS.md",
+    "README.md",
+    "docs/ADR-001.md",
+    "docs/PRD.md",
+    "docs/TDD.md",
+    "docs/decision-register.md",
+    "docs/protocol/wire-codec.md",
+    "features/milestone_1.md",
+    "features/milestone_1_checkpoint_files.txt",
+    "features/milestone_1_git_scope.json",
+    "features/milestone_1_report.md",
+    "features/milestone_1_verification.md",
+    "src/Cargo.lock",
+    "src/Cargo.toml",
+    "src/bins/ikev2d/Cargo.toml",
+    "src/bins/ikev2d/src/main.rs",
+    "src/config/milestone-1.toml",
+    "src/crates/ikev2-wire/Cargo.toml",
+    "src/crates/ikev2-wire/src/decode.rs",
+    "src/crates/ikev2-wire/src/encode.rs",
+    "src/crates/ikev2-wire/src/lib.rs",
+    "src/crates/ikev2-wire/src/limits.rs",
+    "src/crates/ikev2-wire/src/raw.rs",
+    "src/crates/ikev2-wire/src/types.rs",
+    "src/crates/ikev2-wire/tests/codec.rs",
+    "src/crates/ikev2-wire/tests/fixtures/encrypted.hex",
+    "src/crates/ikev2-wire/tests/fixtures/multiple-proposals.hex",
+    "src/crates/ikev2-wire/tests/fixtures/notify-vendor.hex",
+    "src/crates/ikev2-wire/tests/fixtures/sa-init.hex",
+    "src/crates/ikev2-wire/tests/limits.rs",
+    "src/crates/vpn-config/Cargo.toml",
+    "src/crates/vpn-config/src/lib.rs",
+    "src/crates/vpn-observability/Cargo.toml",
+    "src/crates/vpn-observability/src/lib.rs",
+    "src/fuzz/.gitignore",
+    "src/fuzz/Cargo.lock",
+    "src/fuzz/Cargo.toml",
+    "src/fuzz/README.md",
+    "src/fuzz/fuzz_targets/message.rs",
+    "src/fuzz/fuzz_targets/sa.rs",
+    "src/fuzz/fuzz_targets/structured.rs",
+    "src/fuzz/results/campaign.json",
+    "src/fuzz/results/final/campaign.json",
+    "src/fuzz/results/final/environment.json",
+    "src/fuzz/results/final/summary.json",
+    "src/fuzz/results/milestone-1-acceptance-20261017/campaign.json",
+    "src/fuzz/results/milestone-1-acceptance-20261017/environment.json",
+    "src/fuzz/results/milestone-1-acceptance-20261017/message-preflight.log",
+    "src/fuzz/results/milestone-1-acceptance-20261017/message.log",
+    "src/fuzz/results/milestone-1-acceptance-20261017/sa-preflight.log",
+    "src/fuzz/results/milestone-1-acceptance-20261017/sa.log",
+    "src/fuzz/results/milestone-1-acceptance-20261017/structured-preflight.log",
+    "src/fuzz/results/milestone-1-acceptance-20261017/structured.log",
+    "src/fuzz/results/milestone-1-acceptance-20261017/tools.json",
+    "src/fuzz/results/verification.json",
+    "src/fuzz/run_campaign.py",
+    "src/fuzz/seeds/message/encrypted",
+    "src/fuzz/seeds/message/notify-vendor",
+    "src/fuzz/seeds/message/sa-init",
+    "src/fuzz/seeds/message/truncated",
+    "src/fuzz/seeds/sa/multiple-proposals",
+    "src/fuzz/seeds/sa/proposal",
+    "src/fuzz/seeds/sa/truncated",
+    "src/fuzz/seeds/structured/basic"
+  ],
+  "unchanged_authoritative_inputs_included": [
+    "AGENTS.md",
+    "docs/PRD.md",
+    "docs/TDD.md",
+    "docs/ADR-001.md"
+  ],
+  "verified_staged_file_count": 64,
+  "excluded_staged_overlap": [],
+  "preexisting_tracked_state_preserved": true,
+  "checkpoint_status": "prepared in staging area; no commit created because Git author identity is unset"
+}

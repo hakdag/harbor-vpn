@@ -1,0 +1,7 @@
+# Offline codec resource policy; no deployment or cryptographic defaults.
+[codec]
+message_bytes = 65535
+payloads = 128
+proposals = 64
+transforms = 64
+attributes = 64

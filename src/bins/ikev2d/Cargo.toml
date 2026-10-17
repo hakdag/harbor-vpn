@@ -1,0 +1,11 @@
+[package]
+name = "ikev2d"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+[lints]
+workspace = true
+[dependencies]
+vpn-config.workspace = true
+vpn-observability.workspace = true
+tracing.workspace = true

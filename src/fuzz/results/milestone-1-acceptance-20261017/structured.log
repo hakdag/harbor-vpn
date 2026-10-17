@@ -1,0 +1,32 @@
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on build directory
+    Finished `release` profile [optimized + debuginfo] target(s) in 0.01s
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Finished `release` profile [optimized + debuginfo] target(s) in 0.01s
+     Running `fuzz/target/x86_64-unknown-linux-gnu/release/structured '-artifact_prefix=/mnt/data/projects/personal vpn/src/fuzz/artifacts/structured/' -max_total_time=1800 '-artifact_prefix=/mnt/data/projects/personal vpn/src/fuzz/results/milestone-1-acceptance-20261017/structured-artifacts/' -max_len=65536 -timeout=10 -rss_limit_mb=512 -seed=20261017 -detect_leaks=1 -print_final_stats=1 '/mnt/data/projects/personal vpn/src/fuzz/corpus/structured'`
+INFO: Running with entropic power schedule (0xFF, 100).
+INFO: Seed: 20261017
+INFO: Loaded 1 modules   (2343 inline 8-bit counters): 2343 [0x563dc3057a10, 0x563dc3058337), 
+INFO: Loaded 1 PC tables (2343 PCs): 2343 [0x563dc3058338,0x563dc30615a8), 
+INFO:      101 files found in /mnt/data/projects/personal vpn/src/fuzz/corpus/structured
+INFO: seed corpus: files: 101 min: 1b max: 273b total: 8130b rss: 42Mb
+#102	INITED cov: 441 ft: 955 corp: 84/6584b exec/s: 0 rss: 47Mb
+#262144	pulse  cov: 441 ft: 955 corp: 84/6584b lim: 2881 exec/s: 131072 rss: 293Mb
+#524288	pulse  cov: 441 ft: 955 corp: 84/6584b lim: 5482 exec/s: 104857 rss: 341Mb
+#1048576	pulse  cov: 441 ft: 955 corp: 84/6584b lim: 10703 exec/s: 104857 rss: 360Mb
+#2097152	pulse  cov: 441 ft: 955 corp: 84/6584b lim: 21158 exec/s: 110376 rss: 366Mb
+#4194304	pulse  cov: 441 ft: 955 corp: 84/6584b lim: 42048 exec/s: 107546 rss: 370Mb
+#8388608	pulse  cov: 441 ft: 955 corp: 84/6584b lim: 65536 exec/s: 104857 rss: 370Mb
+#16777216	pulse  cov: 441 ft: 955 corp: 84/6584b lim: 65536 exec/s: 98689 rss: 370Mb
+#33554432	pulse  cov: 441 ft: 955 corp: 84/6584b lim: 65536 exec/s: 97541 rss: 370Mb
+#67108864	pulse  cov: 441 ft: 955 corp: 84/6584b lim: 65536 exec/s: 96559 rss: 370Mb
+#134217728	pulse  cov: 441 ft: 955 corp: 84/6584b lim: 65536 exec/s: 95257 rss: 370Mb
+#171518122	DONE   cov: 441 ft: 955 corp: 84/6584b lim: 65536 exec/s: 95234 rss: 370Mb
+Done 171518122 runs in 1801 second(s)
+stat::number_of_executed_units: 171518122
+stat::average_exec_per_sec:     95234
+stat::new_units_added:          0
+stat::slowest_unit_time_sec:    0
+stat::peak_rss_mb:              370

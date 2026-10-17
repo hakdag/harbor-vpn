@@ -1,0 +1,74 @@
+[
+  {
+    "target": "message",
+    "exit_status": 0,
+    "environment": "outside filesystem/process sandbox; AddressSanitizer and LeakSanitizer enabled",
+    "command": [
+      "cargo",
+      "+nightly",
+      "fuzz",
+      "run",
+      "message",
+      "--",
+      "-max_total_time=60",
+      "-max_len=65536",
+      "-timeout=10",
+      "-rss_limit_mb=512",
+      "-seed=20261017",
+      "-print_final_stats=1"
+    ],
+    "seconds": 61,
+    "executions": 8188646,
+    "peak_rss_mb": 400,
+    "log": "fuzz/results/verification-message.log",
+    "empty_artifact_replay_exit_status": 0
+  },
+  {
+    "target": "sa",
+    "exit_status": 0,
+    "environment": "outside filesystem/process sandbox; AddressSanitizer and LeakSanitizer enabled",
+    "command": [
+      "cargo",
+      "+nightly",
+      "fuzz",
+      "run",
+      "sa",
+      "--",
+      "-max_total_time=60",
+      "-max_len=65536",
+      "-timeout=10",
+      "-rss_limit_mb=512",
+      "-seed=20261017",
+      "-print_final_stats=1"
+    ],
+    "seconds": 61,
+    "executions": 24871369,
+    "peak_rss_mb": 348,
+    "log": "fuzz/results/verification-sa.log",
+    "empty_artifact_replay_exit_status": 0
+  },
+  {
+    "target": "structured",
+    "exit_status": 0,
+    "environment": "outside filesystem/process sandbox; AddressSanitizer and LeakSanitizer enabled",
+    "command": [
+      "cargo",
+      "+nightly",
+      "fuzz",
+      "run",
+      "structured",
+      "--",
+      "-max_total_time=60",
+      "-max_len=65536",
+      "-timeout=10",
+      "-rss_limit_mb=512",
+      "-seed=20261017",
+      "-print_final_stats=1"
+    ],
+    "seconds": 61,
+    "executions": 6275077,
+    "peak_rss_mb": 357,
+    "log": "fuzz/results/verification-structured.log",
+    "empty_artifact_replay_exit_status": 0
+  }
+]
