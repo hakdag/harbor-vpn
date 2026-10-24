@@ -1,0 +1,8 @@
+# Retained validation output only.
+!fmt.log
+!clippy.log
+!test.log
+!test-unrestricted.log
+# Full preexisting diff backups are local preservation artifacts, not checkpoint content.
+initial_index.patch
+initial_worktree.patch

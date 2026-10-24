@@ -1,0 +1,2 @@
+# Preserve exact remediation check output.
+!*.log

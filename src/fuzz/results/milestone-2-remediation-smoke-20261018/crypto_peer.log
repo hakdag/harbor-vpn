@@ -1,0 +1,27 @@
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on build directory
+    Finished `release` profile [optimized + debuginfo] target(s) in 0.01s
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Finished `release` profile [optimized + debuginfo] target(s) in 0.02s
+     Running `fuzz/target/x86_64-unknown-linux-gnu/release/crypto_peer '-artifact_prefix=/mnt/data/projects/personal vpn/src/fuzz/artifacts/crypto_peer/' -max_total_time=60 '-artifact_prefix=/mnt/data/projects/personal vpn/src/fuzz/results/milestone-2-remediation-smoke-20261018/crypto_peer-artifacts/' -max_len=65536 -timeout=10 -rss_limit_mb=512 -seed=20261018 -detect_leaks=1 -print_final_stats=1 '/mnt/data/projects/personal vpn/src/fuzz/corpus/crypto_peer'`
+INFO: Running with entropic power schedule (0xFF, 100).
+INFO: Seed: 20261018
+INFO: Loaded 1 modules   (4026 inline 8-bit counters): 4026 [0x5575c5462a10, 0x5575c54639ca), 
+INFO: Loaded 1 PC tables (4026 PCs): 4026 [0x5575c54639d0,0x5575c5473570), 
+INFO:       36 files found in /mnt/data/projects/personal vpn/src/fuzz/corpus/crypto_peer
+INFO: seed corpus: files: 36 min: 1b max: 4097b total: 10606b rss: 51Mb
+#39	INITED cov: 579 ft: 864 corp: 25/8146b exec/s: 0 rss: 58Mb
+#32768	pulse  cov: 579 ft: 864 corp: 25/8146b lim: 4421 exec/s: 10922 rss: 479Mb
+#65536	pulse  cov: 579 ft: 864 corp: 25/8146b lim: 4745 exec/s: 10922 rss: 481Mb
+#131072	pulse  cov: 579 ft: 864 corp: 25/8146b lim: 5393 exec/s: 10082 rss: 483Mb
+#262144	pulse  cov: 579 ft: 864 corp: 25/8146b lim: 6701 exec/s: 10082 rss: 486Mb
+#524288	pulse  cov: 579 ft: 864 corp: 25/8146b lim: 9306 exec/s: 10082 rss: 487Mb
+#615776	DONE   cov: 579 ft: 864 corp: 25/8146b lim: 10229 exec/s: 10094 rss: 487Mb
+Done 615776 runs in 61 second(s)
+stat::number_of_executed_units: 615776
+stat::average_exec_per_sec:     10094
+stat::new_units_added:          0
+stat::slowest_unit_time_sec:    0
+stat::peak_rss_mb:              487

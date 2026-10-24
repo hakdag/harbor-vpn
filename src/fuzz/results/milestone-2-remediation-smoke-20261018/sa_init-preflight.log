@@ -1,0 +1,20 @@
+   Compiling ikev2-core v0.1.0 (/mnt/data/projects/personal vpn/src/crates/ikev2-core)
+   Compiling ikev2-transport v0.1.0 (/mnt/data/projects/personal vpn/src/crates/ikev2-transport)
+   Compiling ikev2-wire-fuzz v0.0.0 (/mnt/data/projects/personal vpn/src/fuzz)
+    Finished `release` profile [optimized + debuginfo] target(s) in 1.47s
+    Finished `release` profile [optimized + debuginfo] target(s) in 0.02s
+     Running `fuzz/target/x86_64-unknown-linux-gnu/release/sa_init '-artifact_prefix=/mnt/data/projects/personal vpn/src/fuzz/artifacts/sa_init/' -runs=1 -max_len=65536 -timeout=10 -rss_limit_mb=512 -seed=20261018 -detect_leaks=1 -print_final_stats=1 '/mnt/data/projects/personal vpn/src/fuzz/corpus/sa_init'`
+INFO: Running with entropic power schedule (0xFF, 100).
+INFO: Seed: 20261018
+INFO: Loaded 1 modules   (8304 inline 8-bit counters): 8304 [0x55a6b182a5e0, 0x55a6b182c650), 
+INFO: Loaded 1 PC tables (8304 PCs): 8304 [0x55a6b182c650,0x55a6b184cd50), 
+INFO:      421 files found in /mnt/data/projects/personal vpn/src/fuzz/corpus/sa_init
+INFO: seed corpus: files: 421 min: 1b max: 1029b total: 81375b rss: 54Mb
+#430	INITED cov: 1543 ft: 4370 corp: 275/50Kb exec/s: 0 rss: 96Mb
+#430	DONE   cov: 1543 ft: 4370 corp: 275/50Kb lim: 1029 exec/s: 0 rss: 96Mb
+Done 430 runs in 0 second(s)
+stat::number_of_executed_units: 430
+stat::average_exec_per_sec:     0
+stat::new_units_added:          0
+stat::slowest_unit_time_sec:    0
+stat::peak_rss_mb:              96

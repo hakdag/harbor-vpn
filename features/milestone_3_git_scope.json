@@ -1,0 +1,222 @@
+{
+  "head": "190dc5f07f345df36cf68a5de24a108fd6fc83b9",
+  "baseline": "Remediated M2 working tree described by baseline.json, not staged M2 index",
+  "source_changes": [
+    {
+      "path": "src/Cargo.lock",
+      "baseline_sha256": "7466ee9f8d292d2cedb7ab6b8fe08f214b9a9cd8c60a36d7f1eb5f3aec5cdade",
+      "final_sha256": "3874ee96fd488285688553be247faf74ce1a1864146773cd6d653d8b94326648"
+    },
+    {
+      "path": "src/Cargo.toml",
+      "baseline_sha256": "f07a1ea9a0d267ecde91664670158c5accfbbe2f640abc27e5444c1a791b8637",
+      "final_sha256": "372ac719aa9c0edf6315dc07a1103b0a529182a3136f3f6f8c3775a82da73b0d"
+    },
+    {
+      "path": "src/bins/ikev2d/Cargo.toml",
+      "baseline_sha256": "362728117266d82c29204d13557b8353363a7ca8397644e815766df9af2cd355",
+      "final_sha256": "ea56ef90bd77178e38ea741e83a7af8b57ab40b5474a38ea42468992179f7d0e"
+    },
+    {
+      "path": "src/bins/ikev2d/src/main.rs",
+      "baseline_sha256": "18e1f3f7d95ebd7670941eb56a01019ff356b444dd37de38ae800d15f0c90d1e",
+      "final_sha256": "7e50b602457c854adadf7b11d7236e23da3727a4fe3564b443e3ff7749bcd4fb"
+    },
+    {
+      "path": "src/bins/ikev2d/tests/cli.rs",
+      "baseline_sha256": "ca2f1f74f96fffe420f00b1626e6ea981279b946b2cef57d1ec7db02af02d9c2",
+      "final_sha256": "20c61051f65e56e2d22e02b78e9a631b63f8d958c57ab2ccd77a4062cce9c50a"
+    },
+    {
+      "path": "src/config/milestone-3-lab.toml",
+      "baseline_sha256": null,
+      "final_sha256": "fa843627caf6fed2954aecda230fe7762bbf10e3db93b2ec86d7ff2ade0fed8d"
+    },
+    {
+      "path": "src/crates/ikev2-core/Cargo.toml",
+      "baseline_sha256": "fc8d52123877b10d08b82320d12cb669008ece623b8a769ae82241c8afc1a7e8",
+      "final_sha256": "aef97357df49a52904c529e7d022608b98acdaa2af74609105636fadcae53f00"
+    },
+    {
+      "path": "src/crates/ikev2-core/src/auth_exchange.rs",
+      "baseline_sha256": null,
+      "final_sha256": "22fc854c33ef02536726b53de8ae9d621af5738699a3431f6cadf373c74235cc"
+    },
+    {
+      "path": "src/crates/ikev2-core/src/lib.rs",
+      "baseline_sha256": "8eecd5899dd260da72df8dc48cb696337fade712523f64ed76f310db7db3282a",
+      "final_sha256": "f4e7180ed15e100279060cdc53c79f0acf711b35ad0da3a7771c4fd445dbfd93"
+    },
+    {
+      "path": "src/crates/ikev2-core/src/responder.rs",
+      "baseline_sha256": "cfcaa28607cf67dee68e9a3ffd507922a26a4398ac26eb5ce3d1dbfadad6fba3",
+      "final_sha256": "11bfc3b2baa7b76ecf70f4407a0d0888e187089ca98745fae2d46fe6a58c70da"
+    },
+    {
+      "path": "src/crates/ikev2-core/tests/handshake.rs",
+      "baseline_sha256": "d5bbf4e4ca828b39294a027d99be4807a8e31f6ff2383cad592139a9bc8a600b",
+      "final_sha256": "acc595e51b95bdf1d3f763663dc97e1b251a7561f2ff58a153abb05535c1dce8"
+    },
+    {
+      "path": "src/crates/ikev2-crypto/Cargo.toml",
+      "baseline_sha256": "ac3e5d5b55c5898f716b28cb5a6ee414704e4280552d729551f26cea53544f7c",
+      "final_sha256": "1fe680eaac5cc7fd6cbe9ad34185889055e6595cef508c4e63f1a99fd96b5281"
+    },
+    {
+      "path": "src/crates/ikev2-crypto/src/identity.rs",
+      "baseline_sha256": null,
+      "final_sha256": "b988ed3b74ea22d7c691a86bdf1d06f420e07b74c126a32898b9f50c895958bd"
+    },
+    {
+      "path": "src/crates/ikev2-crypto/src/lib.rs",
+      "baseline_sha256": "e141e9e9b1ef0a64a3d26e94b8f6035ef2e0d21edafd9401b3158ea54f95f11c",
+      "final_sha256": "9ab0133836905236ce8770d7b82471fbe5e8c3fe6f1a89decca353ccd70a0a20"
+    },
+    {
+      "path": "src/crates/ikev2-crypto/src/mschap.rs",
+      "baseline_sha256": null,
+      "final_sha256": "9bd5858504ccd2cf2259400ed9f65532a433074b63d373759673b7ae40ae81d7"
+    },
+    {
+      "path": "src/crates/ikev2-crypto/src/protected.rs",
+      "baseline_sha256": null,
+      "final_sha256": "c07bf883ece15811c967244dfe30f98d5811bd98228ef0d4f18373b5dcb6c534"
+    },
+    {
+      "path": "src/crates/ikev2-crypto/src/tests.rs",
+      "baseline_sha256": "5ad53307df8ce2af0a8e4812149108b9ae444392d4d8ade3713b4f18126f530f",
+      "final_sha256": "a4656e0f858511dad5cb56dfc0eaeb07c50615aa127397322575dee5af6b0cf6"
+    },
+    {
+      "path": "src/crates/ikev2-crypto/tests/fixtures/auth-reference.json",
+      "baseline_sha256": null,
+      "final_sha256": "b2e17e8eb70909615591f957c42a5c64521d5724002a8b0170017586427d8343"
+    },
+    {
+      "path": "src/crates/ikev2-crypto/tests/fixtures/generate_auth_reference.py",
+      "baseline_sha256": null,
+      "final_sha256": "a03a5aeff0925f97bcec552515a41946109d0ce16bebe3f97406ba4bf98e5b97"
+    },
+    {
+      "path": "src/crates/ikev2-transport/src/lib.rs",
+      "baseline_sha256": "0be0667c62cf4b902376915ee89eaef30d020c114b9d87d381fdc43729fc7c78",
+      "final_sha256": "2a491d5634156a37df19246efc64909720fb54c461d6fb0228e9d1e12dbe4bb4"
+    },
+    {
+      "path": "src/crates/ikev2-wire/src/auth.rs",
+      "baseline_sha256": null,
+      "final_sha256": "c2fa052ced3becd8c758f511e4cfe513fa60229cb34f1228536aa58b8fe3a383"
+    },
+    {
+      "path": "src/crates/ikev2-wire/src/lib.rs",
+      "baseline_sha256": "5e227cef5f08bb49a4c21dc87da6251b3ff68a91260a8992c1888ff5b1488619",
+      "final_sha256": "d71f4b5b16fc39190ec47363561cec4faeae14dede2c2247fe50e087580e8949"
+    },
+    {
+      "path": "src/crates/ikev2-wire/tests/auth.rs",
+      "baseline_sha256": null,
+      "final_sha256": "46a809bf3eae8bf77673a709f26a2b4e8455fa2726f7d0d61d627e2b5a1880fb"
+    },
+    {
+      "path": "src/crates/vpn-auth/Cargo.toml",
+      "baseline_sha256": null,
+      "final_sha256": "174137a4938857652134105920a96296b070a394a31c551bb21e60918bf0b9f4"
+    },
+    {
+      "path": "src/crates/vpn-auth/examples/provision.rs",
+      "baseline_sha256": null,
+      "final_sha256": "14a5ad41878a43cb23cf3578d71d172ca9a5625835bf055240d85e006dccf9ff"
+    },
+    {
+      "path": "src/crates/vpn-auth/src/credentials.rs",
+      "baseline_sha256": null,
+      "final_sha256": "5851179a00c79b48198ff04711892f3ba4c04bf6773a7e4886f129e3c48c6a80"
+    },
+    {
+      "path": "src/crates/vpn-auth/src/eap.rs",
+      "baseline_sha256": null,
+      "final_sha256": "e435ed6e75e6ba025c89ab935fd9a75304d647fef5b10954cf6ea31d08bee1de"
+    },
+    {
+      "path": "src/crates/vpn-auth/src/lib.rs",
+      "baseline_sha256": null,
+      "final_sha256": "80e7e787fa156d21456bee344783765c63dd2cce6f39d42e725f8ebeb4f357b4"
+    },
+    {
+      "path": "src/crates/vpn-auth/src/store.rs",
+      "baseline_sha256": null,
+      "final_sha256": "01eeceac23d29a326b5cc9eac717733b5969dc485bd1651970641883ceaea691"
+    },
+    {
+      "path": "src/crates/vpn-config/src/lib.rs",
+      "baseline_sha256": "1f9fc7c9c088e5fbf504df937b65414e4b71cb405c037dcda5674bb3e912ab8d",
+      "final_sha256": "01d950804a591c521cc309a2cfe6776416e88a8c95f9841148195e803db34e00"
+    },
+    {
+      "path": "src/fuzz/.gitignore",
+      "baseline_sha256": null,
+      "final_sha256": "f313a40a5ba9438fb2941e6b1a216358f79c12ae2f8464f898467986ff202672",
+      "baseline_note": "Existing M2 file not included in source hash baseline; M3 adds only log-retention patterns, preserving prior patterns."
+    },
+    {
+      "path": "src/fuzz/Cargo.lock",
+      "baseline_sha256": "50c579601404a6b7e7d39aeee583052342b333b4adf24c1605de698e32049b8e",
+      "final_sha256": "de927f48c37df6388507877fa2cd765cc4ae9327922bf990f9f8015f040948f7"
+    },
+    {
+      "path": "src/fuzz/Cargo.toml",
+      "baseline_sha256": "03c5f9e268042b823d90e0e170d7142d5a229332ccc3b64c196777d47c1f63a9",
+      "final_sha256": "2239b89b782df720541cd498709e2b3bb85c7176da455e1e44be12491ca84803"
+    },
+    {
+      "path": "src/fuzz/fuzz_targets/eap.rs",
+      "baseline_sha256": null,
+      "final_sha256": "d55505806a4325ee0b961453163ab6d344a635c9d72d35972adfd966c5e24636"
+    },
+    {
+      "path": "src/fuzz/fuzz_targets/protected_auth.rs",
+      "baseline_sha256": null,
+      "final_sha256": "0f62bca522e8828b8034bcd35cc007474022a99a80d8df028430fa9ce6014553"
+    },
+    {
+      "path": "src/fuzz/run_campaign.py",
+      "baseline_sha256": "cd74384dc3b042e7173666907397ae61024e08008956024a0c1286ff55938adb",
+      "final_sha256": "410a522bbc5e18e5e1bcb2bc80b0132c64c5ac08c90e483cb21522504c809c76"
+    },
+    {
+      "path": "src/fuzz/seeds/eap/identity",
+      "baseline_sha256": null,
+      "final_sha256": "1898016f9317922344edca8b080165fa72ca31c72ddda3f4b53030e1946d764c"
+    },
+    {
+      "path": "src/fuzz/seeds/eap/success-ack",
+      "baseline_sha256": null,
+      "final_sha256": "48d7386b0ed9fa9812495b48ce6b1fefe0acaeaadc267f56a047f3237a31ed77"
+    },
+    {
+      "path": "src/fuzz/seeds/protected_auth/inner-identity",
+      "baseline_sha256": null,
+      "final_sha256": "a6586b3d74006353414a07ee9ec280168d5a745660a1762f9004434ee60a96ab"
+    },
+    {
+      "path": "src/fuzz/seeds/protected_auth/valid-sk",
+      "baseline_sha256": null,
+      "final_sha256": "4d3c7ca81b3005715299573cece391667373513daf12d1e5a4b4920499f7cc29"
+    }
+  ],
+  "new_documentation_and_evidence": [
+    "docs/protocol/ike-auth.md",
+    "features/milestone_3_report.md",
+    "features/milestone_3_git_scope.json",
+    "features/milestone_3_evidence/",
+    "src/fuzz/results/milestone-3-*/"
+  ],
+  "preservation": {
+    "head_unchanged": true,
+    "index_binary_diff_unchanged": true,
+    "unrelated_readme_unchanged": true,
+    "old_campaign_logs_hash_verified": 14
+  },
+  "git_mutations": "None: no staging, commit, push, reset or checkout",
+  "scope_caution": "Review/checkpoint pre-existing remediated M2 changes first. Do not stage all src or commit the mixed index. ADR-003 and authorization doc were operator-provided baseline files."
+}

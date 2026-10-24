@@ -1,0 +1,50 @@
+{
+  "executed_utc": "2026-10-18T07:21:18.838058+00:00",
+  "checks": [
+    {
+      "command": [
+        "cargo",
+        "fmt",
+        "--all",
+        "--",
+        "--check"
+      ],
+      "cwd": "src",
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "cargo",
+        "clippy",
+        "--workspace",
+        "--all-targets",
+        "--",
+        "-D",
+        "warnings"
+      ],
+      "cwd": "src",
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "cargo",
+        "test",
+        "--workspace"
+      ],
+      "cwd": "src",
+      "exit_code": 101,
+      "environment": "sandbox; loopback socket denied; see test.log"
+    },
+    {
+      "command": [
+        "cargo",
+        "test",
+        "--workspace"
+      ],
+      "cwd": "src",
+      "environment": "outside sandbox; loopback UDP permitted",
+      "exit_code": 0,
+      "log": "test-unrestricted.log"
+    }
+  ]
+}

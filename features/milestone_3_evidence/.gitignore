@@ -1,0 +1,2 @@
+# Retain validation logs, which contain no protocol secrets.
+!*.log

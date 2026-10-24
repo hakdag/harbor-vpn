@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0"><dict>
+  <key>PayloadType</key><string>Configuration</string>
+  <key>PayloadVersion</key><integer>1</integer>
+  <key>PayloadIdentifier</key><string>org.example.m2.init-only</string>
+  <key>PayloadUUID</key><string>A5382208-19DC-4C38-9196-4C6E4C753201</string>
+  <key>PayloadDisplayName</key><string>M2 INIT-only lab — no VPN service</string>
+  <key>PayloadContent</key><array><dict>
+    <key>PayloadType</key><string>com.apple.vpn.managed</string>
+    <key>PayloadVersion</key><integer>1</integer>
+    <key>PayloadIdentifier</key><string>org.example.m2.init-only.vpn</string>
+    <key>PayloadUUID</key><string>F83F2DB0-8153-44AA-BF19-DF915BB32202</string>
+    <key>PayloadDisplayName</key><string>M2 INIT-only lab</string>
+    <key>UserDefinedName</key><string>M2 INIT-only lab</string>
+    <key>VPNType</key><string>IKEv2</string>
+    <key>OnDemandEnabled</key><integer>0</integer>
+    <key>IKEv2</key><dict>
+      <key>RemoteAddress</key><string>SERVER_IPV4</string>
+      <key>RemoteIdentifier</key><string>vpn-lab.example.invalid</string>
+      <key>LocalIdentifier</key><string>m2-lab-only</string>
+      <key>AuthenticationMethod</key><string>None</string>
+      <key>ExtendedAuthEnabled</key><integer>1</integer>
+      <key>AuthName</key><string>m2-lab-only</string>
+      <key>IKESecurityAssociationParameters</key><dict>
+        <key>EncryptionAlgorithm</key><string>AES-256-GCM</string>
+        <key>IntegrityAlgorithm</key><string>SHA2-256</string>
+        <key>DiffieHellmanGroup</key><integer>19</integer>
+        <key>LifeTimeInMinutes</key><integer>60</integer>
+      </dict>
+      <key>ChildSecurityAssociationParameters</key><dict>
+        <key>EncryptionAlgorithm</key><string>AES-256-GCM</string>
+        <key>IntegrityAlgorithm</key><string>SHA2-256</string>
+        <key>DiffieHellmanGroup</key><integer>19</integer>
+        <key>LifeTimeInMinutes</key><integer>60</integer>
+      </dict>
+    </dict>
+  </dict></array>
+</dict></plist>

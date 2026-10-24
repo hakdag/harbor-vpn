@@ -1,0 +1,40 @@
+    Blocking waiting for file lock on package cache
+    Finished `release` profile [optimized + debuginfo] target(s) in 0.01s
+    Finished `release` profile [optimized + debuginfo] target(s) in 0.00s
+     Running `fuzz/target/x86_64-unknown-linux-gnu/release/message '-artifact_prefix=/mnt/data/projects/personal vpn/src/fuzz/artifacts/message/' -max_total_time=60 '-artifact_prefix=/mnt/data/projects/personal vpn/src/fuzz/results/milestone-2-smoke-20261017/message-artifacts/' -max_len=65536 -timeout=10 -rss_limit_mb=512 -seed=20261017 -detect_leaks=1 -print_final_stats=1 '/mnt/data/projects/personal vpn/src/fuzz/corpus/message'`
+INFO: Running with entropic power schedule (0xFF, 100).
+INFO: Seed: 20261017
+INFO: Loaded 1 modules   (2225 inline 8-bit counters): 2225 [0x557b7e157990, 0x557b7e158241), 
+INFO: Loaded 1 PC tables (2225 PCs): 2225 [0x557b7e158248,0x557b7e160d58), 
+INFO:      469 files found in /mnt/data/projects/personal vpn/src/fuzz/corpus/message
+INFO: seed corpus: files: 469 min: 1b max: 356b total: 43185b rss: 43Mb
+#470	INITED cov: 581 ft: 1977 corp: 257/22Kb exec/s: 0 rss: 56Mb
+#159510	REDUCE cov: 581 ft: 1977 corp: 257/22Kb lim: 1939 exec/s: 159510 rss: 271Mb L: 39/356 MS: 5 EraseBytes-InsertByte-ChangeByte-CMP-ChangeBinInt- DE: "\001\000"-
+#524288	pulse  cov: 581 ft: 1977 corp: 257/22Kb lim: 5570 exec/s: 174762 rss: 449Mb
+#1048576	pulse  cov: 581 ft: 1977 corp: 257/22Kb lim: 10785 exec/s: 149796 rss: 449Mb
+#1142506	REDUCE cov: 581 ft: 1977 corp: 257/22Kb lim: 11721 exec/s: 142813 rss: 449Mb L: 56/356 MS: 1 EraseBytes-
+#1248921	REDUCE cov: 581 ft: 1977 corp: 257/22Kb lim: 12774 exec/s: 156115 rss: 449Mb L: 38/356 MS: 5 ChangeBinInt-EraseBytes-ShuffleBytes-ChangeBinInt-CrossOver-
+#1696125	REDUCE cov: 581 ft: 1977 corp: 257/22Kb lim: 17228 exec/s: 141343 rss: 449Mb L: 36/356 MS: 3 CopyPart-ChangeASCIIInt-EraseBytes-
+#1858344	REDUCE cov: 581 ft: 1977 corp: 257/22Kb lim: 18838 exec/s: 142949 rss: 449Mb L: 32/356 MS: 4 ShuffleBytes-CopyPart-ShuffleBytes-EraseBytes-
+#1917308	REDUCE cov: 581 ft: 1977 corp: 257/22Kb lim: 19412 exec/s: 147485 rss: 449Mb L: 37/356 MS: 3 ChangeBit-InsertByte-EraseBytes-
+#2097152	pulse  cov: 581 ft: 1977 corp: 257/22Kb lim: 21204 exec/s: 139810 rss: 449Mb
+#2143855	REDUCE cov: 581 ft: 1977 corp: 257/22Kb lim: 21666 exec/s: 142923 rss: 449Mb L: 265/356 MS: 2 EraseBytes-ChangeBinInt-
+#2972843	REDUCE cov: 581 ft: 1977 corp: 257/22Kb lim: 29926 exec/s: 141563 rss: 449Mb L: 78/356 MS: 3 EraseBytes-CMP-InsertByte- DE: "\377\377\377\377\377\377\377\003"-
+#4194304	pulse  cov: 581 ft: 1977 corp: 257/22Kb lim: 42098 exec/s: 139810 rss: 449Mb
+#4260621	REDUCE cov: 581 ft: 1977 corp: 257/22Kb lim: 42758 exec/s: 142020 rss: 449Mb L: 40/356 MS: 3 ChangeBinInt-EraseBytes-CrossOver-
+#4958643	REDUCE cov: 581 ft: 1977 corp: 257/22Kb lim: 49703 exec/s: 141675 rss: 449Mb L: 42/356 MS: 2 EraseBytes-InsertByte-
+#6718409	REDUCE cov: 581 ft: 1977 corp: 257/22Kb lim: 65536 exec/s: 139966 rss: 449Mb L: 76/356 MS: 1 EraseBytes-
+#7982553	REDUCE cov: 581 ft: 1977 corp: 257/22Kb lim: 65536 exec/s: 137630 rss: 449Mb L: 68/356 MS: 4 PersAutoDict-EraseBytes-ShuffleBytes-ChangeBinInt- DE: "\001\000"-
+#7991410	REDUCE cov: 581 ft: 1977 corp: 257/22Kb lim: 65536 exec/s: 137782 rss: 449Mb L: 38/356 MS: 2 InsertByte-EraseBytes-
+#8388608	pulse  cov: 581 ft: 1977 corp: 257/22Kb lim: 65536 exec/s: 139810 rss: 449Mb
+#8400305	DONE   cov: 581 ft: 1977 corp: 257/22Kb lim: 65536 exec/s: 137709 rss: 449Mb
+###### Recommended dictionary. ######
+"\001\000" # Uses: 514589
+"\377\377\377\377\377\377\377\003" # Uses: 252657
+###### End of recommended dictionary. ######
+Done 8400305 runs in 61 second(s)
+stat::number_of_executed_units: 8400305
+stat::average_exec_per_sec:     137709
+stat::new_units_added:          13
+stat::slowest_unit_time_sec:    0
+stat::peak_rss_mb:              449

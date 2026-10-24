@@ -1,0 +1,29 @@
+{
+  "runner_exit_status": 0,
+  "targets": [
+    {
+      "target": "sa_init",
+      "exit_status": 0,
+      "completed_fuzz_seconds": 61,
+      "sanitizer_diagnostics": []
+    },
+    {
+      "target": "crypto_peer",
+      "exit_status": 0,
+      "completed_fuzz_seconds": 61,
+      "sanitizer_diagnostics": []
+    },
+    {
+      "target": "protected_auth",
+      "exit_status": 0,
+      "completed_fuzz_seconds": 61,
+      "sanitizer_diagnostics": []
+    },
+    {
+      "target": "eap",
+      "exit_status": 0,
+      "completed_fuzz_seconds": 61,
+      "sanitizer_diagnostics": []
+    }
+  ]
+}

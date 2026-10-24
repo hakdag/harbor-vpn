@@ -1,0 +1,30 @@
+ M README.md
+ M docs/decision-register.md
+ M src/Cargo.lock
+ M src/Cargo.toml
+ M src/bins/ikev2d/Cargo.toml
+ M src/bins/ikev2d/src/main.rs
+ M src/crates/vpn-config/Cargo.toml
+ M src/crates/vpn-config/src/lib.rs
+ M src/fuzz/.gitignore
+ M src/fuzz/Cargo.lock
+ M src/fuzz/Cargo.toml
+ M src/fuzz/README.md
+ M src/fuzz/run_campaign.py
+?? docs/ADR-002.md
+?? docs/Milestone_2_Codex_Implementation_Prompt.md
+?? docs/protocol/ike-sa-init.md
+?? features/milestone_2_report.md
+?? src/bins/ikev2d/tests/
+?? src/config/milestone-2-lab.toml
+?? src/crates/ikev2-core/
+?? src/crates/ikev2-crypto/
+?? src/crates/ikev2-transport/
+?? src/fuzz/fuzz_targets/crypto_peer.rs
+?? src/fuzz/fuzz_targets/sa_init.rs
+?? src/fuzz/results/milestone-2-acceptance-20261018/
+?? src/fuzz/results/milestone-2-acceptance-unrestricted-20261018/
+?? src/fuzz/results/milestone-2-final-smoke-20261017/
+?? src/fuzz/results/milestone-2-smoke-20261017/
+?? src/fuzz/seeds/crypto_peer/
+?? src/fuzz/seeds/sa_init/

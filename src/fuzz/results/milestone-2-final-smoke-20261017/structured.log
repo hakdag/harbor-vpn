@@ -1,0 +1,27 @@
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Finished `release` profile [optimized + debuginfo] target(s) in 0.02s
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Finished `release` profile [optimized + debuginfo] target(s) in 0.01s
+     Running `fuzz/target/x86_64-unknown-linux-gnu/release/structured '-artifact_prefix=/mnt/data/projects/personal vpn/src/fuzz/artifacts/structured/' -max_total_time=60 '-artifact_prefix=/mnt/data/projects/personal vpn/src/fuzz/results/milestone-2-final-smoke-20261017/structured-artifacts/' -max_len=65536 -timeout=10 -rss_limit_mb=512 -seed=20261017 -detect_leaks=1 -print_final_stats=1 '/mnt/data/projects/personal vpn/src/fuzz/corpus/structured'`
+INFO: Running with entropic power schedule (0xFF, 100).
+INFO: Seed: 20261017
+INFO: Loaded 1 modules   (2343 inline 8-bit counters): 2343 [0x5639b4520a10, 0x5639b4521337), 
+INFO: Loaded 1 PC tables (2343 PCs): 2343 [0x5639b4521338,0x5639b452a5a8), 
+INFO:      101 files found in /mnt/data/projects/personal vpn/src/fuzz/corpus/structured
+INFO: seed corpus: files: 101 min: 1b max: 273b total: 8130b rss: 44Mb
+#102	INITED cov: 441 ft: 955 corp: 84/6584b exec/s: 0 rss: 49Mb
+#262144	pulse  cov: 441 ft: 955 corp: 84/6584b lim: 2881 exec/s: 87381 rss: 440Mb
+#524288	pulse  cov: 441 ft: 955 corp: 84/6584b lim: 5482 exec/s: 87381 rss: 440Mb
+#1048576	pulse  cov: 441 ft: 955 corp: 84/6584b lim: 10703 exec/s: 95325 rss: 440Mb
+#2097152	pulse  cov: 441 ft: 955 corp: 84/6584b lim: 21158 exec/s: 91180 rss: 440Mb
+#4194304	pulse  cov: 441 ft: 955 corp: 84/6584b lim: 42048 exec/s: 91180 rss: 440Mb
+#5518312	DONE   cov: 441 ft: 955 corp: 84/6584b lim: 55248 exec/s: 90464 rss: 440Mb
+Done 5518312 runs in 61 second(s)
+stat::number_of_executed_units: 5518312
+stat::average_exec_per_sec:     90464
+stat::new_units_added:          0
+stat::slowest_unit_time_sec:    0
+stat::peak_rss_mb:              440

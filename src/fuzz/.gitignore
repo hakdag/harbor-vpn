@@ -7,3 +7,15 @@
 
 # Preserve the approved clean-exit acceptance evidence, including sanitizer logs.
 !/results/milestone-1-acceptance-20261017/*.log
+!/results/milestone-2-smoke-20261017/*.log
+!/results/milestone-2-final-smoke-20261017/*.log
+
+# Milestone 2 final validation: preserve clean rerun and failed sandbox preflight.
+!/results/milestone-2-acceptance-20261018/*.log
+!/results/milestone-2-acceptance-unrestricted-20261018/*.log
+!/results/milestone-2-remediation-smoke-20261018/*.log
+
+# Milestone 3 sanitizer smoke evidence.
+!/results/milestone-3-smoke-20261018/*.log
+!/results/milestone-3-smoke-unrestricted-20261018/*.log
+!/results/milestone-3-final-smoke-20261018/*.log

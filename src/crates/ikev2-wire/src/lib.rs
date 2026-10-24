@@ -1,6 +1,7 @@
 //! Offline IKEv2 wire codec. Successful decoding is not exchange validation,
 //! authentication, negotiation, or permission to act on packet contents.
 #![forbid(unsafe_code)]
+pub mod auth;
 mod decode;
 mod encode;
 mod limits;

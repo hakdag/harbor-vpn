@@ -8,8 +8,12 @@ edition = "2024"
 cargo-fuzz = true
 
 [dependencies]
+vpn-auth = { path = "../crates/vpn-auth" }
 libfuzzer-sys = "0.4"
 ikev2-wire = { path = "../crates/ikev2-wire" }
+ikev2-core = { path = "../crates/ikev2-core" }
+ikev2-crypto = { path = "../crates/ikev2-crypto" }
+ikev2-transport = { path = "../crates/ikev2-transport" }
 
 [workspace]
 members = ["."]
@@ -31,6 +35,34 @@ bench = false
 [[bin]]
 name = "structured"
 path = "fuzz_targets/structured.rs"
+test = false
+doc = false
+bench = false
+
+[[bin]]
+name = "sa_init"
+path = "fuzz_targets/sa_init.rs"
+test = false
+doc = false
+bench = false
+
+[[bin]]
+name = "crypto_peer"
+path = "fuzz_targets/crypto_peer.rs"
+test = false
+doc = false
+bench = false
+
+[[bin]]
+name = "protected_auth"
+path = "fuzz_targets/protected_auth.rs"
+test = false
+doc = false
+bench = false
+
+[[bin]]
+name = "eap"
+path = "fuzz_targets/eap.rs"
 test = false
 doc = false
 bench = false

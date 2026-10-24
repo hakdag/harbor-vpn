@@ -1,0 +1,26 @@
+{
+  "head_unchanged": true,
+  "index_patch_sha256_unchanged": true,
+  "unrelated_readme_bytes_unchanged": true,
+  "changed_tracked_files": [
+    "docs/protocol/ike-sa-init.md",
+    "features/milestone_2_final_verification.md",
+    "src/Cargo.lock",
+    "src/bins/ikev2d/Cargo.toml",
+    "src/bins/ikev2d/src/main.rs",
+    "src/bins/ikev2d/tests/cli.rs",
+    "src/config/milestone-2-lab.toml",
+    "src/crates/ikev2-core/src/lib.rs",
+    "src/crates/ikev2-core/src/policy.rs",
+    "src/crates/ikev2-core/src/responder.rs",
+    "src/crates/ikev2-core/tests/handshake.rs",
+    "src/crates/ikev2-transport/src/lib.rs",
+    "src/crates/ikev2-transport/tests/loopback.rs",
+    "src/crates/vpn-config/src/lib.rs",
+    "src/fuzz/.gitignore",
+    "src/fuzz/fuzz_targets/sa_init.rs"
+  ],
+  "final_source_matches_smoke_hashes": true,
+  "remediation_staged": false,
+  "commit_or_push": false
+}

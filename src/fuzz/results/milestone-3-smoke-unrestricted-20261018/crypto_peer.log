@@ -1,0 +1,28 @@
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on shared package cache
+    Finished `release` profile [optimized + debuginfo] target(s) in 0.05s
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Finished `release` profile [optimized + debuginfo] target(s) in 0.05s
+     Running `fuzz/target/x86_64-unknown-linux-gnu/release/crypto_peer '-artifact_prefix=/mnt/data/projects/personal vpn/src/fuzz/artifacts/crypto_peer/' -max_total_time=60 '-artifact_prefix=/mnt/data/projects/personal vpn/src/fuzz/results/milestone-3-smoke-unrestricted-20261018/crypto_peer-artifacts/' -max_len=65536 -timeout=10 -rss_limit_mb=512 -seed=20261018 -detect_leaks=1 -print_final_stats=1 '/mnt/data/projects/personal vpn/src/fuzz/corpus/crypto_peer'`
+INFO: Running with entropic power schedule (0xFF, 100).
+INFO: Seed: 20261018
+INFO: Loaded 1 modules   (4041 inline 8-bit counters): 4041 [0x56062a63b010, 0x56062a63bfd9), 
+INFO: Loaded 1 PC tables (4041 PCs): 4041 [0x56062a63bfe0,0x56062a64bc70), 
+INFO:       36 files found in /mnt/data/projects/personal vpn/src/fuzz/corpus/crypto_peer
+INFO: seed corpus: files: 36 min: 1b max: 4097b total: 10606b rss: 50Mb
+#39	INITED cov: 583 ft: 868 corp: 25/8146b exec/s: 0 rss: 56Mb
+#32768	pulse  cov: 583 ft: 868 corp: 25/8146b lim: 4421 exec/s: 8192 rss: 443Mb
+#65536	pulse  cov: 583 ft: 868 corp: 25/8146b lim: 4745 exec/s: 9362 rss: 469Mb
+#131072	pulse  cov: 583 ft: 868 corp: 25/8146b lim: 5393 exec/s: 8738 rss: 477Mb
+#262144	pulse  cov: 583 ft: 868 corp: 25/8146b lim: 6701 exec/s: 8456 rss: 477Mb
+#516856	DONE   cov: 583 ft: 868 corp: 25/8146b lim: 9241 exec/s: 8473 rss: 480Mb
+Done 516856 runs in 61 second(s)
+stat::number_of_executed_units: 516856
+stat::average_exec_per_sec:     8473
+stat::new_units_added:          0
+stat::slowest_unit_time_sec:    0
+stat::peak_rss_mb:              480

@@ -1,0 +1,18 @@
+   Compiling ikev2-wire-fuzz v0.0.0 (/mnt/data/projects/personal vpn/src/fuzz)
+    Finished `release` profile [optimized + debuginfo] target(s) in 0.77s
+    Finished `release` profile [optimized + debuginfo] target(s) in 0.02s
+     Running `fuzz/target/x86_64-unknown-linux-gnu/release/sa_init '-artifact_prefix=/mnt/data/projects/personal vpn/src/fuzz/artifacts/sa_init/' -runs=1 -max_len=65536 -timeout=10 -rss_limit_mb=512 -seed=20261017 -detect_leaks=1 -print_final_stats=1 '/mnt/data/projects/personal vpn/src/fuzz/corpus/sa_init'`
+INFO: Running with entropic power schedule (0xFF, 100).
+INFO: Seed: 20261017
+INFO: Loaded 1 modules   (7557 inline 8-bit counters): 7557 [0x558eedcb4880, 0x558eedcb6605), 
+INFO: Loaded 1 PC tables (7557 PCs): 7557 [0x558eedcb6608,0x558eedcd3e58), 
+INFO:      270 files found in /mnt/data/projects/personal vpn/src/fuzz/corpus/sa_init
+INFO: seed corpus: files: 270 min: 1b max: 1029b total: 57610b rss: 54Mb
+#277	INITED cov: 1361 ft: 3907 corp: 217/44Kb exec/s: 0 rss: 72Mb
+#277	DONE   cov: 1361 ft: 3907 corp: 217/44Kb lim: 1029 exec/s: 0 rss: 72Mb
+Done 277 runs in 0 second(s)
+stat::number_of_executed_units: 277
+stat::average_exec_per_sec:     0
+stat::new_units_added:          0
+stat::slowest_unit_time_sec:    0
+stat::peak_rss_mb:              72

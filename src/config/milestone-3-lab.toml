@@ -1,0 +1,10 @@
+# No real secrets or external addresses. Requires approved systemd LoadCredential
+# credentials and a suitable publicly trusted certificate before it can serve.
+[udp]
+ike = "127.0.0.1:15000"
+natt = "127.0.0.1:14500"
+[handshake]
+max_request_bytes = 16384
+max_response_bytes = 16384
+[authentication]
+enabled = true

@@ -42,6 +42,8 @@ def main():
     parser.add_argument("--seed", type=int, default=20261017)
     parser.add_argument("--results", default="fuzz/results/campaign-" +
                         datetime.datetime.now(datetime.timezone.utc).strftime("%Y%m%dT%H%M%SZ"))
+    parser.add_argument("--targets", nargs="+", choices=["message", "sa", "structured", "sa_init", "crypto_peer", "protected_auth", "eap"],
+                        default=["message", "sa", "structured"])
     args = parser.parse_args()
     if args.seconds < 1:
         parser.error("--seconds must be positive")
@@ -55,7 +57,7 @@ def main():
     env["LSAN_OPTIONS"] = "exitcode=23"
     options = ["-max_len=65536", "-timeout=10", "-rss_limit_mb=512",
                f"-seed={args.seed}", "-detect_leaks=1", "-print_final_stats=1"]
-    targets = ["message", "sa", "structured"]
+    targets = list(dict.fromkeys(args.targets))
     before = source_hashes(root)
     metadata = {
         "started_utc": utc_now(), "workspace": str(root), "host": platform.platform(),
@@ -68,6 +70,8 @@ def main():
         "sanitizer_environment": {key: env[key] for key in ["ASAN_OPTIONS", "LSAN_OPTIONS"]},
         "source_sha256_before": before, "preflight": [],
         "initial_corpus": {},
+        "openssl": version(["openssl", "version"], root),
+        "nightly_cargo": version(["cargo", "+nightly", "--version"], root),
     }
     for target in targets:
         corpus = root / "fuzz/corpus" / target
@@ -147,7 +151,7 @@ def main():
         save(results / "environment.json", metadata)
         save(results / "campaign.json", report)
         print(json.dumps(report, indent=2), flush=True)
-    return 0 if len(report) == 3 and all(run["passed"] for run in report) and before == after else 1
+    return 0 if len(report) == len(targets) and all(run["passed"] for run in report) and before == after else 1
 
 
 if __name__ == "__main__":

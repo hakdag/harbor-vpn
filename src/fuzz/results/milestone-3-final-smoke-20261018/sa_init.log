@@ -1,0 +1,38 @@
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on build directory
+    Finished `release` profile [optimized + debuginfo] target(s) in 0.03s
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on build directory
+    Finished `release` profile [optimized + debuginfo] target(s) in 0.04s
+     Running `fuzz/target/x86_64-unknown-linux-gnu/release/sa_init '-artifact_prefix=/mnt/data/projects/personal vpn/src/fuzz/artifacts/sa_init/' -max_total_time=60 '-artifact_prefix=/mnt/data/projects/personal vpn/src/fuzz/results/milestone-3-final-smoke-20261018/sa_init-artifacts/' -max_len=65536 -timeout=10 -rss_limit_mb=512 -seed=20261018 -detect_leaks=1 -print_final_stats=1 '/mnt/data/projects/personal vpn/src/fuzz/corpus/sa_init'`
+INFO: Running with entropic power schedule (0xFF, 100).
+INFO: Seed: 20261018
+INFO: Loaded 1 modules   (15351 inline 8-bit counters): 15351 [0x55eed6dcc8a0, 0x55eed6dd0497), 
+INFO: Loaded 1 PC tables (15351 PCs): 15351 [0x55eed6dd0498,0x55eed6e0c408), 
+INFO:      462 files found in /mnt/data/projects/personal vpn/src/fuzz/corpus/sa_init
+INFO: seed corpus: files: 462 min: 1b max: 4100b total: 92435b rss: 56Mb
+#472	INITED cov: 1517 ft: 4343 corp: 264/50Kb exec/s: 0 rss: 101Mb
+#5079	NEW    cov: 1521 ft: 4348 corp: 265/50Kb lim: 4148 exec/s: 0 rss: 142Mb L: 236/4100 MS: 1 ChangeByte-
+#41586	REDUCE cov: 1521 ft: 4348 corp: 265/50Kb lim: 4508 exec/s: 41586 rss: 290Mb L: 196/4100 MS: 4 CMP-ChangeASCIIInt-ChangeBit-EraseBytes- DE: "~\377\377\377\377\377\377\361"-
+#65536	pulse  cov: 1521 ft: 4348 corp: 265/50Kb lim: 4736 exec/s: 32768 rss: 290Mb
+#131072	pulse  cov: 1521 ft: 4348 corp: 265/50Kb lim: 5396 exec/s: 26214 rss: 290Mb
+#262144	pulse  cov: 1521 ft: 4348 corp: 265/50Kb lim: 6704 exec/s: 23831 rss: 290Mb
+#466304	REDUCE cov: 1521 ft: 4348 corp: 265/50Kb lim: 8738 exec/s: 23315 rss: 295Mb L: 212/4100 MS: 4 InsertRepeatedBytes-CopyPart-InsertByte-EraseBytes-
+#524288	pulse  cov: 1521 ft: 4348 corp: 265/50Kb lim: 9310 exec/s: 22795 rss: 295Mb
+#561579	REDUCE cov: 1521 ft: 4348 corp: 265/50Kb lim: 9687 exec/s: 23399 rss: 295Mb L: 92/4100 MS: 1 EraseBytes-
+#630242	REDUCE cov: 1521 ft: 4348 corp: 265/50Kb lim: 10363 exec/s: 22508 rss: 295Mb L: 4098/4098 MS: 2 PersAutoDict-EraseBytes- DE: "~\377\377\377\377\377\377\361"-
+#900679	REDUCE cov: 1521 ft: 4348 corp: 265/50Kb lim: 13054 exec/s: 21967 rss: 295Mb L: 232/4098 MS: 4 EraseBytes-ChangeASCIIInt-ChangeBit-ChangeBit-
+#1048576	pulse  cov: 1521 ft: 4348 corp: 265/50Kb lim: 14523 exec/s: 21845 rss: 295Mb
+#1299121	DONE   cov: 1521 ft: 4348 corp: 265/50Kb lim: 17025 exec/s: 21297 rss: 296Mb
+###### Recommended dictionary. ######
+"~\377\377\377\377\377\377\361" # Uses: 109721
+###### End of recommended dictionary. ######
+Done 1299121 runs in 61 second(s)
+stat::number_of_executed_units: 1299121
+stat::average_exec_per_sec:     21297
+stat::new_units_added:          6
+stat::slowest_unit_time_sec:    0
+stat::peak_rss_mb:              296

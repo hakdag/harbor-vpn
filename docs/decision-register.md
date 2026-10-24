@@ -1,6 +1,6 @@
-# Milestone 1 decision register
+# Architecture decision register
 
-Status: implementation scope approved by the maintainer in the implementation request, including its eight adjustments. This register records conflicts; it does not amend or approve pending decisions in PRD, TDD, or ADR-001.
+Status: the Milestone 1 entries below preserve the decisions and conflicts recorded at that checkpoint. The Milestone 2 update records the subsequent accepted ADR-002 and implementation authorization. This register does not amend the PRD, TDD or ADR-001, or independently accept their remaining pending decisions.
 
 ## Approved implementation boundaries
 
@@ -40,7 +40,7 @@ Status: implementation scope approved by the maintainer in the implementation re
 | A-08 | Ubuntu LTS/kernel baseline and deployment prerequisites | Operations; choose supported LTS, kernel, DNS ownership, public IP/firewall. Current validation host is Arch Linux, not Ubuntu. |
 | A-09 | Phase 2 transport, authorization, revoke latency and daemon-down recovery | Control-plane implementer / maintainer; authenticated IPC and multi-session revoke tests. No M1 implementation. |
 
-Milestone 2 requires separate maintainer approval. No pending ADR entry is promoted to Accepted here.
+At the Milestone 1 checkpoint, Milestone 2 required separate maintainer approval. The subsequent authorization is recorded below; no other pending ADR entry is promoted to Accepted here.
 
 ## Decisions required before implementing IKE_SA_INIT
 
@@ -53,3 +53,18 @@ This is a review of prerequisite scope, not approval of proposed settings and no
 | INIT-03 | Initial-exchange state and network-exposure boundary: offline core versus isolated UDP integration, unprivileged parser and low-port binding, pending-handshake budgets/timeouts, cookie/DoS policy, duplicate/retransmission behavior, and NAT-detection/4500 framing coverage. Advertise only extensions actually implemented. | TDD §§2–3 and ADR D8; narrow initial-exchange portions of A-05/A-07. Review the bounded initial state model and test seam before implementation; resolve host/bind privileges before live UDP tests. No XFRM privileges or public deployment are implied. |
 
 These are the prerequisites for the initial exchange only. CA/signature lifecycle, password-verifier storage, address pool/DNS/IPv6, ESP installation, XFRM helper/recovery, full DPD/rekey/MOBIKE and Phase 2 IPC/revocation remain decisions for their later work. Pinning an Ubuntu LTS integration-test host is a live-test prerequisite (A-08), not a blocker to writing the offline exchange core. None of these pending choices is selected here.
+
+## Milestone 2 update — 2026-10-17
+
+Authority: accepted [ADR-002](ADR-002.md) and the maintainer's [implementation prompt](Milestone_2_Codex_Implementation_Prompt.md). The prerequisite table above is historical; the following supersedes its unapproved status only for the specified initial-exchange scope.
+
+| ID | Status / implementation | Remaining evidence or gate |
+|---|---|---|
+| INIT-01 | Accepted for IKE SA: ENCR_AES_GCM_16 (20), key-length 256, PRF_HMAC_SHA2_256 (5), ECP group 19, no INTEG transform and no fallback. Unknown offers remain numeric data. | Actual iOS build, explicit profile and captured proposals remain unvalidated. A-01/C-06 remain open for client interoperability and ESP. |
+| INIT-02 | Accepted OpenSSL 3.x through `ikev2-crypto`; checked peer points, ephemeral ECDH, CSPRNG, PRF/key schedule and bounded AES-GCM API. | Ubuntu packaging, maintained library baseline, full transitive license/security review and deployment evidence remain outstanding. No FIPS or comprehensive FFI-memory-erasure claim. |
+| INIT-03 | Accepted initial IPv4 UDP/NAT-T boundary. Offline core, explicit nonblocking sockets, exact-response cache, deadlines, pending budgets and rotating stateless cookies implemented. | Real NAT/iOS and target-host low-port permissions/confinement tests remain outstanding; XFRM privileges, fragmentation, MOBIKE, DPD/rekey and established-session policy are not selected. |
+| M2-01 | Tunable implementation defaults: 1,024 pending globally, 32/source IP, 10 s lifetime, COOKIE at 512 pending, 60 s secret rotation; current and preceding cookie epoch accepted. | These protect unauthenticated pending exchanges only. Tune with deployment load evidence; no user/device/session cap. See protocol document for hard ceilings. |
+| M2-02 | Explicit unicast local IPv4 bind required; wildcard binding rejected so std UDP sockets provide the correct local address for NAT hashes. High-port loopback lab supplied; no privilege changes. | Multihomed wildcard support would need reviewed destination-address ancillary-data handling. Public/privileged deployment is not implied. |
+| M2-03 | RFC 7296 §2.6 cookie MAC binds epoch, nonce, SPIi and source/destination IP+port. No pending state or ECDH before cookie validation under load. KE is not MAC-bound, permitting invalid-group retry. | No native-client retry capture yet. Threshold defense is not a production DDoS guarantee or network rate limiter. |
+
+C-01 through C-05 and C-07 remain unresolved. C-06 is narrowed by ADR-002 only for the implemented IKE SA suite; no supporting specification is silently rewritten. A-02 through A-09 retain the later-work gates listed above. Before any separately approved authentication work, resolve the authentication flow/API, compatible verifier storage and custody, certificate trust/signature/lifecycle and key isolation. Do not begin Milestone 3 automatically.

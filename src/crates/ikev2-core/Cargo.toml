@@ -1,0 +1,13 @@
+[package]
+name = "ikev2-core"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+[lints]
+workspace = true
+[dependencies]
+vpn-auth.workspace = true
+ikev2-wire.workspace = true
+ikev2-crypto.workspace = true
+openssl.workspace = true
+[dev-dependencies]

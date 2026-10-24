@@ -1,0 +1,34 @@
+    Finished `release` profile [optimized + debuginfo] target(s) in 0.01s
+    Finished `release` profile [optimized + debuginfo] target(s) in 0.01s
+     Running `fuzz/target/x86_64-unknown-linux-gnu/release/crypto_peer '-artifact_prefix=/mnt/data/projects/personal vpn/src/fuzz/artifacts/crypto_peer/' -max_total_time=1800 '-artifact_prefix=/mnt/data/projects/personal vpn/src/fuzz/results/milestone-2-acceptance-unrestricted-20261018/crypto_peer-artifacts/' -max_len=65536 -timeout=10 -rss_limit_mb=512 -seed=20261018 -detect_leaks=1 -print_final_stats=1 '/mnt/data/projects/personal vpn/src/fuzz/corpus/crypto_peer'`
+INFO: Running with entropic power schedule (0xFF, 100).
+INFO: Seed: 20261018
+INFO: Loaded 1 modules   (4026 inline 8-bit counters): 4026 [0x55ee18b92a10, 0x55ee18b939ca), 
+INFO: Loaded 1 PC tables (4026 PCs): 4026 [0x55ee18b939d0,0x55ee18ba3570), 
+INFO:       35 files found in /mnt/data/projects/personal vpn/src/fuzz/corpus/crypto_peer
+INFO: seed corpus: files: 35 min: 1b max: 1035b total: 6509b rss: 51Mb
+#38	INITED cov: 578 ft: 862 corp: 24/4049b exec/s: 0 rss: 58Mb
+#32768	pulse  cov: 578 ft: 862 corp: 24/4049b lim: 1352 exec/s: 10922 rss: 482Mb
+#65536	pulse  cov: 578 ft: 862 corp: 24/4049b lim: 1682 exec/s: 10922 rss: 483Mb
+#131072	pulse  cov: 578 ft: 862 corp: 24/4049b lim: 2327 exec/s: 10082 rss: 484Mb
+#262144	pulse  cov: 578 ft: 862 corp: 24/4049b lim: 3636 exec/s: 10082 rss: 485Mb
+#524288	pulse  cov: 578 ft: 862 corp: 24/4049b lim: 6246 exec/s: 10280 rss: 486Mb
+#624395	NEW    cov: 579 ft: 864 corp: 25/8296b lim: 7242 exec/s: 10235 rss: 486Mb L: 4247/4247 MS: 5 CrossOver-ChangeBit-CMP-CopyPart-CopyPart- DE: "\001\000\000\000\000\000\000M"-
+#624626	REDUCE cov: 579 ft: 864 corp: 25/8201b lim: 7242 exec/s: 10239 rss: 486Mb L: 4152/4152 MS: 1 EraseBytes-
+#625085	REDUCE cov: 579 ft: 864 corp: 25/8169b lim: 7242 exec/s: 10082 rss: 486Mb L: 4120/4120 MS: 4 InsertByte-CrossOver-InsertRepeatedBytes-EraseBytes-
+#633996	REDUCE cov: 579 ft: 864 corp: 25/8159b lim: 7326 exec/s: 10225 rss: 505Mb L: 4110/4110 MS: 1 EraseBytes-
+#637160	REDUCE cov: 579 ft: 864 corp: 25/8146b lim: 7350 exec/s: 10113 rss: 505Mb L: 4097/4097 MS: 4 ShuffleBytes-InsertRepeatedBytes-CrossOver-CrossOver-
+#1048576	pulse  cov: 579 ft: 864 corp: 25/8146b lim: 11439 exec/s: 9892 rss: 512Mb
+#2097152	pulse  cov: 579 ft: 864 corp: 25/8146b lim: 21894 exec/s: 9489 rss: 512Mb
+#4194304	pulse  cov: 579 ft: 864 corp: 25/8146b lim: 42792 exec/s: 9177 rss: 512Mb
+#8388608	pulse  cov: 579 ft: 864 corp: 25/8146b lim: 65536 exec/s: 8867 rss: 512Mb
+#15377630	DONE   cov: 579 ft: 864 corp: 25/8146b lim: 65536 exec/s: 8538 rss: 512Mb
+###### Recommended dictionary. ######
+"\001\000\000\000\000\000\000M" # Uses: 1150931
+###### End of recommended dictionary. ######
+Done 15377630 runs in 1801 second(s)
+stat::number_of_executed_units: 15377630
+stat::average_exec_per_sec:     8538
+stat::new_units_added:          5
+stat::slowest_unit_time_sec:    0
+stat::peak_rss_mb:              512

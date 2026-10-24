@@ -1,0 +1,27 @@
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.08s
+     Running tests/kernel.rs (src/target/debug/deps/kernel-696b2f2e25ca84e4)
+
+running 1 test
+Traceback (most recent call last):
+  File "/mnt/data/projects/personal vpn/src/crates/xfrm-linux/../../../tools/poc/cleanup_xfrm.py", line 43, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "/mnt/data/projects/personal vpn/src/crates/xfrm-linux/../../../tools/poc/cleanup_xfrm.py", line 28, in main
+    if not index or not direction:raise RuntimeError('unsupported policy display format; no wildcard deletion')
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: unsupported policy display format; no wildcard deletion
+
+thread 'kernel_install_collision_rollback_and_owned_delete' (440453) panicked at crates/xfrm-linux/tests/kernel.rs:57:5:
+assertion failed: Command::new("python3").arg(cleanup).args(["--reqid-start", "65536",
+                        "--apply"]).status().unwrap().success()
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+test kernel_install_collision_rollback_and_owned_delete ... FAILED
+
+failures:
+
+failures:
+    kernel_install_collision_rollback_and_owned_delete
+
+test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.07s
+
+error: test failed, to rerun pass `-p xfrm-linux --test kernel`

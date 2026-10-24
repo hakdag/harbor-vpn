@@ -1,0 +1,36 @@
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Finished `release` profile [optimized + debuginfo] target(s) in 0.03s
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Finished `release` profile [optimized + debuginfo] target(s) in 0.03s
+     Running `fuzz/target/x86_64-unknown-linux-gnu/release/eap '-artifact_prefix=/mnt/data/projects/personal vpn/src/fuzz/artifacts/eap/' -max_total_time=60 '-artifact_prefix=/mnt/data/projects/personal vpn/src/fuzz/results/milestone-3-final-smoke-20261018/eap-artifacts/' -max_len=65536 -timeout=10 -rss_limit_mb=512 -seed=20261018 -detect_leaks=1 -print_final_stats=1 '/mnt/data/projects/personal vpn/src/fuzz/corpus/eap'`
+INFO: Running with entropic power schedule (0xFF, 100).
+INFO: Seed: 20261018
+INFO: Loaded 1 modules   (5867 inline 8-bit counters): 5867 [0x558a5e658ae0, 0x558a5e65a1cb), 
+INFO: Loaded 1 PC tables (5867 PCs): 5867 [0x558a5e65a1d0,0x558a5e671080), 
+INFO:       20 files found in /mnt/data/projects/personal vpn/src/fuzz/corpus/eap
+INFO: seed corpus: files: 20 min: 1b max: 9b total: 110b rss: 53Mb
+#21	INITED cov: 908 ft: 1153 corp: 13/58b exec/s: 0 rss: 67Mb
+#2048	pulse  cov: 908 ft: 1153 corp: 13/58b lim: 26 exec/s: 1024 rss: 470Mb
+#4096	pulse  cov: 908 ft: 1153 corp: 13/58b lim: 49 exec/s: 819 rss: 470Mb
+#4665	NEW    cov: 909 ft: 1159 corp: 14/62b lim: 54 exec/s: 777 rss: 470Mb L: 4/9 MS: 4 CrossOver-ShuffleBytes-ChangeBinInt-ChangeBit-
+#4781	NEW    cov: 909 ft: 1164 corp: 15/66b lim: 54 exec/s: 796 rss: 470Mb L: 4/9 MS: 1 ChangeByte-
+#7493	NEW    cov: 910 ft: 1165 corp: 16/70b lim: 76 exec/s: 681 rss: 470Mb L: 4/9 MS: 1 ChangeBinInt-
+#8192	pulse  cov: 910 ft: 1165 corp: 16/70b lim: 82 exec/s: 682 rss: 470Mb
+#11620	NEW    cov: 911 ft: 1166 corp: 17/74b lim: 112 exec/s: 683 rss: 470Mb L: 4/9 MS: 2 ChangeBit-ShuffleBytes-
+#16384	pulse  cov: 911 ft: 1166 corp: 17/74b lim: 158 exec/s: 682 rss: 470Mb
+#19446	NEW    cov: 912 ft: 1168 corp: 18/79b lim: 186 exec/s: 670 rss: 470Mb L: 5/9 MS: 1 ChangeByte-
+#20877	NEW    cov: 913 ft: 1169 corp: 19/83b lim: 200 exec/s: 652 rss: 470Mb L: 4/9 MS: 1 ChangeBit-
+#23079	REDUCE cov: 913 ft: 1169 corp: 19/79b lim: 221 exec/s: 659 rss: 470Mb L: 5/9 MS: 2 EraseBytes-CrossOver-
+#29383	REDUCE cov: 913 ft: 1169 corp: 19/78b lim: 280 exec/s: 638 rss: 470Mb L: 4/9 MS: 4 EraseBytes-ShuffleBytes-ShuffleBytes-ChangeBinInt-
+#32768	pulse  cov: 913 ft: 1169 corp: 19/78b lim: 312 exec/s: 630 rss: 470Mb
+#37824	DONE   cov: 913 ft: 1169 corp: 19/78b lim: 360 exec/s: 620 rss: 470Mb
+Done 37824 runs in 61 second(s)
+stat::number_of_executed_units: 37824
+stat::average_exec_per_sec:     620
+stat::new_units_added:          8
+stat::slowest_unit_time_sec:    0
+stat::peak_rss_mb:              470

@@ -1,0 +1,35 @@
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Finished `release` profile [optimized + debuginfo] target(s) in 0.02s
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Finished `release` profile [optimized + debuginfo] target(s) in 0.01s
+     Running `fuzz/target/x86_64-unknown-linux-gnu/release/crypto_peer '-artifact_prefix=/mnt/data/projects/personal vpn/src/fuzz/artifacts/crypto_peer/' -max_total_time=60 '-artifact_prefix=/mnt/data/projects/personal vpn/src/fuzz/results/milestone-2-final-smoke-20261017/crypto_peer-artifacts/' -max_len=65536 -timeout=10 -rss_limit_mb=512 -seed=20261017 -detect_leaks=1 -print_final_stats=1 '/mnt/data/projects/personal vpn/src/fuzz/corpus/crypto_peer'`
+INFO: Running with entropic power schedule (0xFF, 100).
+INFO: Seed: 20261017
+INFO: Loaded 1 modules   (4026 inline 8-bit counters): 4026 [0x564d79431a10, 0x564d794329ca), 
+INFO: Loaded 1 PC tables (4026 PCs): 4026 [0x564d794329d0,0x564d79442570), 
+INFO:       31 files found in /mnt/data/projects/personal vpn/src/fuzz/corpus/crypto_peer
+INFO: seed corpus: files: 31 min: 1b max: 1035b total: 4876b rss: 51Mb
+#34	INITED cov: 578 ft: 862 corp: 24/4055b exec/s: 0 rss: 56Mb
+#2239	REDUCE cov: 578 ft: 862 corp: 24/4052b lim: 1055 exec/s: 0 rss: 150Mb L: 1032/1032 MS: 3 ChangeByte-InsertRepeatedBytes-EraseBytes-
+#7302	REDUCE cov: 578 ft: 862 corp: 24/4051b lim: 1105 exec/s: 0 rss: 369Mb L: 41/1032 MS: 3 ChangeByte-ChangeByte-EraseBytes-
+#12716	REDUCE cov: 578 ft: 862 corp: 24/4050b lim: 1155 exec/s: 12716 rss: 384Mb L: 40/1032 MS: 4 ChangeByte-CMP-ChangeByte-EraseBytes- DE: "HMAC"-
+#16384	pulse  cov: 578 ft: 862 corp: 24/4050b lim: 1185 exec/s: 8192 rss: 421Mb
+#32768	pulse  cov: 578 ft: 862 corp: 24/4050b lim: 1345 exec/s: 8192 rss: 440Mb
+#55145	REDUCE cov: 578 ft: 862 corp: 24/4049b lim: 1575 exec/s: 7877 rss: 440Mb L: 520/1032 MS: 4 EraseBytes-ChangeByte-ChangeBinInt-PersAutoDict- DE: "HMAC"-
+#65536	pulse  cov: 578 ft: 862 corp: 24/4049b lim: 1675 exec/s: 8192 rss: 440Mb
+#131072	pulse  cov: 578 ft: 862 corp: 24/4049b lim: 2330 exec/s: 8192 rss: 468Mb
+#262144	pulse  cov: 578 ft: 862 corp: 24/4049b lim: 3628 exec/s: 7943 rss: 478Mb
+#474971	DONE   cov: 578 ft: 862 corp: 24/4049b lim: 5745 exec/s: 7786 rss: 478Mb
+###### Recommended dictionary. ######
+"HMAC" # Uses: 41574
+###### End of recommended dictionary. ######
+Done 474971 runs in 61 second(s)
+stat::number_of_executed_units: 474971
+stat::average_exec_per_sec:     7786
+stat::new_units_added:          4
+stat::slowest_unit_time_sec:    0
+stat::peak_rss_mb:              478

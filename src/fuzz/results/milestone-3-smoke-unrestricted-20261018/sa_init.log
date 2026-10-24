@@ -1,0 +1,79 @@
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on build directory
+    Finished `release` profile [optimized + debuginfo] target(s) in 0.07s
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on shared package cache
+    Blocking waiting for file lock on build directory
+    Finished `release` profile [optimized + debuginfo] target(s) in 0.05s
+     Running `fuzz/target/x86_64-unknown-linux-gnu/release/sa_init '-artifact_prefix=/mnt/data/projects/personal vpn/src/fuzz/artifacts/sa_init/' -max_total_time=60 '-artifact_prefix=/mnt/data/projects/personal vpn/src/fuzz/results/milestone-3-smoke-unrestricted-20261018/sa_init-artifacts/' -max_len=65536 -timeout=10 -rss_limit_mb=512 -seed=20261018 -detect_leaks=1 -print_final_stats=1 '/mnt/data/projects/personal vpn/src/fuzz/corpus/sa_init'`
+INFO: Running with entropic power schedule (0xFF, 100).
+INFO: Seed: 20261018
+INFO: Loaded 1 modules   (15351 inline 8-bit counters): 15351 [0x5611d7aa9880, 0x5611d7aad477), 
+INFO: Loaded 1 PC tables (15351 PCs): 15351 [0x5611d7aad478,0x5611d7ae93e8), 
+INFO:      441 files found in /mnt/data/projects/personal vpn/src/fuzz/corpus/sa_init
+INFO: seed corpus: files: 441 min: 1b max: 4100b total: 88622b rss: 54Mb
+#451	INITED cov: 1508 ft: 4301 corp: 260/49Kb exec/s: 0 rss: 97Mb
+#2560	NEW    cov: 1509 ft: 4302 corp: 261/50Kb lim: 4124 exec/s: 0 rss: 118Mb L: 232/4100 MS: 1 ChangeBinInt-
+#4637	REDUCE cov: 1509 ft: 4302 corp: 261/50Kb lim: 4136 exec/s: 0 rss: 136Mb L: 138/4100 MS: 5 CopyPart-CopyPart-CrossOver-ShuffleBytes-EraseBytes-
+#26725	NEW    cov: 1509 ft: 4303 corp: 262/50Kb lim: 4352 exec/s: 26725 rss: 292Mb L: 198/4100 MS: 3 ShuffleBytes-EraseBytes-ChangeBit-
+#28107	REDUCE cov: 1509 ft: 4303 corp: 262/50Kb lim: 4364 exec/s: 28107 rss: 292Mb L: 107/4100 MS: 1 EraseBytes-
+#28285	REDUCE cov: 1509 ft: 4303 corp: 262/50Kb lim: 4364 exec/s: 28285 rss: 292Mb L: 104/4100 MS: 2 ChangeBinInt-EraseBytes-
+#28747	REDUCE cov: 1509 ft: 4303 corp: 262/50Kb lim: 4364 exec/s: 28747 rss: 292Mb L: 155/4100 MS: 2 ChangeASCIIInt-EraseBytes-
+#31268	REDUCE cov: 1509 ft: 4303 corp: 262/50Kb lim: 4388 exec/s: 31268 rss: 292Mb L: 104/4100 MS: 5 ChangeBit-CMP-InsertByte-ChangeBinInt-EraseBytes- DE: "SecP384"-
+#33854	REDUCE cov: 1509 ft: 4303 corp: 262/50Kb lim: 4412 exec/s: 33854 rss: 292Mb L: 53/4100 MS: 4 ShuffleBytes-ChangeByte-ChangeByte-EraseBytes-
+#36097	REDUCE cov: 1509 ft: 4303 corp: 262/50Kb lim: 4424 exec/s: 36097 rss: 292Mb L: 101/4100 MS: 1 EraseBytes-
+#36433	REDUCE cov: 1509 ft: 4303 corp: 262/50Kb lim: 4424 exec/s: 36433 rss: 292Mb L: 41/4100 MS: 1 EraseBytes-
+#42505	REDUCE cov: 1509 ft: 4303 corp: 262/50Kb lim: 4484 exec/s: 42505 rss: 292Mb L: 62/4100 MS: 1 EraseBytes-
+#45071	REDUCE cov: 1509 ft: 4303 corp: 262/50Kb lim: 4508 exec/s: 45071 rss: 292Mb L: 34/4100 MS: 2 ChangeBit-EraseBytes-
+#59687	REDUCE cov: 1509 ft: 4304 corp: 263/50Kb lim: 4652 exec/s: 29843 rss: 292Mb L: 27/4100 MS: 2 PersAutoDict-EraseBytes- DE: "SecP384"-
+#65536	pulse  cov: 1509 ft: 4304 corp: 263/50Kb lim: 4700 exec/s: 32768 rss: 292Mb
+#74039	REDUCE cov: 1509 ft: 4304 corp: 263/50Kb lim: 4784 exec/s: 37019 rss: 292Mb L: 20/4100 MS: 2 CMP-EraseBytes- DE: "\000\000\007\321"-
+#77072	REDUCE cov: 1509 ft: 4304 corp: 263/50Kb lim: 4808 exec/s: 38536 rss: 292Mb L: 30/4100 MS: 2 ChangeByte-EraseBytes-
+#116846	NEW    cov: 1509 ft: 4305 corp: 264/50Kb lim: 5204 exec/s: 29211 rss: 299Mb L: 168/4100 MS: 3 ChangeBit-ChangeByte-ChangeByte-
+#131072	pulse  cov: 1509 ft: 4305 corp: 264/50Kb lim: 5336 exec/s: 26214 rss: 299Mb
+#142433	NEW    cov: 1509 ft: 4306 corp: 265/50Kb lim: 5456 exec/s: 28486 rss: 299Mb L: 232/4100 MS: 1 ShuffleBytes-
+#186632	REDUCE cov: 1509 ft: 4306 corp: 265/50Kb lim: 5888 exec/s: 31105 rss: 311Mb L: 29/4100 MS: 3 ShuffleBytes-PersAutoDict-EraseBytes- DE: "SecP384"-
+#188438	REDUCE cov: 1509 ft: 4306 corp: 265/50Kb lim: 5900 exec/s: 26919 rss: 311Mb L: 28/4100 MS: 3 CopyPart-CopyPart-EraseBytes-
+	NEW_FUNC[1/1]: 0x5611d796b050 in <core::slice::iter::ChunksExact<u8> as core::iter::traits::iterator::Iterator>::try_fold::<(), core::iter::traits::iterator::Iterator::any::check<&[u8], <ikev2_core::responder::Responder<ikev2_crypto::OpenSslProvider>>::process::{closure#1}>::{closure#0}, core::ops::control_flow::ControlFlow<()>> /rustc/5d8fec0669a64607db9ccbf663e7c23125bf4748/library/core/src/iter/traits/iterator.rs:2496
+#193689	NEW    cov: 1519 ft: 4316 corp: 266/50Kb lim: 5948 exec/s: 27669 rss: 311Mb L: 232/4100 MS: 2 ChangeBit-ChangeByte-
+#205411	NEW    cov: 1519 ft: 4326 corp: 267/50Kb lim: 6056 exec/s: 29344 rss: 311Mb L: 236/4100 MS: 1 CMP- DE: "\025\000\000\000"-
+#210436	REDUCE cov: 1519 ft: 4326 corp: 267/50Kb lim: 6104 exec/s: 26304 rss: 311Mb L: 33/4100 MS: 1 EraseBytes-
+#211888	REDUCE cov: 1519 ft: 4326 corp: 267/50Kb lim: 6116 exec/s: 26486 rss: 311Mb L: 224/4100 MS: 3 CMP-ChangeByte-EraseBytes- DE: "\377\377\377\377\377\377\377\034"-
+#225661	NEW    cov: 1519 ft: 4333 corp: 268/51Kb lim: 6248 exec/s: 28207 rss: 311Mb L: 232/4100 MS: 1 CrossOver-
+#262144	pulse  cov: 1519 ft: 4333 corp: 268/51Kb lim: 6608 exec/s: 26214 rss: 311Mb
+#262660	REDUCE cov: 1519 ft: 4333 corp: 268/51Kb lim: 6608 exec/s: 26266 rss: 311Mb L: 32/4100 MS: 1 EraseBytes-
+#321846	NEW    cov: 1519 ft: 4334 corp: 269/51Kb lim: 7196 exec/s: 26820 rss: 311Mb L: 182/4100 MS: 1 EraseBytes-
+#361660	NEW    cov: 1519 ft: 4344 corp: 270/51Kb lim: 7592 exec/s: 27820 rss: 311Mb L: 236/4100 MS: 1 ChangeBinInt-
+#362295	NEW    cov: 1520 ft: 4345 corp: 271/51Kb lim: 7592 exec/s: 27868 rss: 311Mb L: 236/4100 MS: 1 ChangeBit-
+#379182	REDUCE cov: 1520 ft: 4345 corp: 271/51Kb lim: 7760 exec/s: 27084 rss: 311Mb L: 36/4100 MS: 4 ChangeBinInt-ChangeBit-EraseBytes-PersAutoDict- DE: "\025\000\000\000"-
+#389859	REDUCE cov: 1520 ft: 4345 corp: 271/51Kb lim: 7856 exec/s: 25990 rss: 311Mb L: 226/4100 MS: 1 EraseBytes-
+#415190	NEW    cov: 1520 ft: 4346 corp: 272/51Kb lim: 8108 exec/s: 25949 rss: 311Mb L: 232/4100 MS: 1 ChangeBinInt-
+#420030	NEW    cov: 1521 ft: 4347 corp: 273/52Kb lim: 8156 exec/s: 26251 rss: 311Mb L: 236/4100 MS: 5 ChangeBinInt-PersAutoDict-ShuffleBytes-CopyPart-ChangeByte- DE: "\025\000\000\000"-
+#503564	NEW    cov: 1521 ft: 4348 corp: 274/52Kb lim: 8985 exec/s: 26503 rss: 311Mb L: 232/4100 MS: 5 PersAutoDict-PersAutoDict-ChangeASCIIInt-ChangeBinInt-ShuffleBytes- DE: "\025\000\000\000"-"\377\377\377\377\377\377\377\034"-
+#524288	pulse  cov: 1521 ft: 4348 corp: 274/52Kb lim: 9180 exec/s: 26214 rss: 311Mb
+#588970	NEW    cov: 1521 ft: 4352 corp: 275/52Kb lim: 9830 exec/s: 25607 rss: 311Mb L: 452/4100 MS: 2 ChangeBit-ChangeBit-
+#593609	REDUCE cov: 1521 ft: 4352 corp: 275/52Kb lim: 9869 exec/s: 25809 rss: 311Mb L: 196/4100 MS: 4 ShuffleBytes-EraseBytes-ChangeASCIIInt-ChangeByte-
+#629001	REDUCE cov: 1521 ft: 4352 corp: 275/52Kb lim: 10220 exec/s: 25160 rss: 311Mb L: 142/4100 MS: 4 CMP-ChangeByte-ChangeBit-EraseBytes- DE: "include-public"-
+#908449	REDUCE cov: 1521 ft: 4352 corp: 275/52Kb lim: 13002 exec/s: 23293 rss: 330Mb L: 124/4100 MS: 2 PersAutoDict-EraseBytes- DE: "\025\000\000\000"-
+#1048576	pulse  cov: 1521 ft: 4352 corp: 275/52Kb lim: 14393 exec/s: 22310 rss: 330Mb
+#1066238	REDUCE cov: 1521 ft: 4352 corp: 275/52Kb lim: 14575 exec/s: 22685 rss: 330Mb L: 62/4100 MS: 2 ChangeBit-EraseBytes-
+#1136986	REDUCE cov: 1521 ft: 4352 corp: 275/52Kb lim: 15277 exec/s: 22293 rss: 330Mb L: 19/4100 MS: 1 EraseBytes-
+#1323242	DONE   cov: 1521 ft: 4352 corp: 275/52Kb lim: 17123 exec/s: 21692 rss: 330Mb
+###### Recommended dictionary. ######
+"SecP384" # Uses: 30769
+"\000\000\007\321" # Uses: 27397
+"\025\000\000\000" # Uses: 21512
+"\377\377\377\377\377\377\377\034" # Uses: 21417
+"include-public" # Uses: 12141
+###### End of recommended dictionary. ######
+Done 1323242 runs in 61 second(s)
+stat::number_of_executed_units: 1323242
+stat::average_exec_per_sec:     21692
+stat::new_units_added:          39
+stat::slowest_unit_time_sec:    0
+stat::peak_rss_mb:              330

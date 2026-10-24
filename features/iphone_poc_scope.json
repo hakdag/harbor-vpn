@@ -1,0 +1,168 @@
+{
+  "baseline_head": "190dc5f07f345df36cf68a5de24a108fd6fc83b9",
+  "baseline": "post-M3 working tree; existing index contains older M2 checkpoint",
+  "preserved": {
+    "head": true,
+    "index_binary_diff": true,
+    "unrelated_readme_branding": true
+  },
+  "source_changes": [
+    {
+      "path": "src/Cargo.lock",
+      "baseline_sha256": "3874ee96fd488285688553be247faf74ce1a1864146773cd6d653d8b94326648",
+      "final_sha256": "f8334cb0cfddf192bd0d57862a4044eb70c3f85fbd7748b420ee5e421e1e82e1"
+    },
+    {
+      "path": "src/Cargo.toml",
+      "baseline_sha256": "372ac719aa9c0edf6315dc07a1103b0a529182a3136f3f6f8c3775a82da73b0d",
+      "final_sha256": "9ca37926a68a13f5990ea18e7df611b84f85aff9c9c6440647786114937edfab"
+    },
+    {
+      "path": "src/bins/ikev2d/Cargo.toml",
+      "baseline_sha256": "ea56ef90bd77178e38ea741e83a7af8b57ab40b5474a38ea42468992179f7d0e",
+      "final_sha256": "72c5dde5405534e7bb9ef3494049c9f8060800a5a08cc128e04cf38420a33354"
+    },
+    {
+      "path": "src/bins/ikev2d/src/main.rs",
+      "baseline_sha256": "7e50b602457c854adadf7b11d7236e23da3727a4fe3564b443e3ff7749bcd4fb",
+      "final_sha256": "2bffdc918c635e394b93f2b45307586b2645d774061679696fff6fe8d9357989"
+    },
+    {
+      "path": "src/bins/ikev2d/tests/cli.rs",
+      "baseline_sha256": "20c61051f65e56e2d22e02b78e9a631b63f8d958c57ab2ccd77a4062cce9c50a",
+      "final_sha256": "46eb412479af3561619f6e4f0352822881b3c1ab3663575b4ab383bb4d76e3f6"
+    },
+    {
+      "path": "src/config/iphone-poc.toml",
+      "baseline_sha256": null,
+      "final_sha256": "51b447344e5f44de99f2e3c70abb4ab78c81be8fb2451246b83aba17bcff721d"
+    },
+    {
+      "path": "src/crates/ikev2-core/Cargo.toml",
+      "baseline_sha256": "aef97357df49a52904c529e7d022608b98acdaa2af74609105636fadcae53f00",
+      "final_sha256": "b18e157213f5052f91bc763e62ad8ae941ca3541eec4b06ca447c50bf7c4dc50"
+    },
+    {
+      "path": "src/crates/ikev2-core/src/auth_exchange.rs",
+      "baseline_sha256": "22fc854c33ef02536726b53de8ae9d621af5738699a3431f6cadf373c74235cc",
+      "final_sha256": "a0932496e4d14ce7c72022a7d294e8d8c8b3215a21a8ee46ce4ec8458930e071"
+    },
+    {
+      "path": "src/crates/ikev2-core/src/child.rs",
+      "baseline_sha256": null,
+      "final_sha256": "d45b874a872cf795100659e00a2920f51368b44dced03cf45869b583fb0f5791"
+    },
+    {
+      "path": "src/crates/ikev2-core/src/lib.rs",
+      "baseline_sha256": "f4e7180ed15e100279060cdc53c79f0acf711b35ad0da3a7771c4fd445dbfd93",
+      "final_sha256": "99592d0eb16793f13ba124563a1aa888f79a574eee8ea6e32452c2112c42a204"
+    },
+    {
+      "path": "src/crates/ikev2-core/src/responder.rs",
+      "baseline_sha256": "11bfc3b2baa7b76ecf70f4407a0d0888e187089ca98745fae2d46fe6a58c70da",
+      "final_sha256": "051f04a59154a43d38222071ad0f5e2593635d2d5bfe219720fd7b3e0d2e40f3"
+    },
+    {
+      "path": "src/crates/ikev2-core/tests/handshake.rs",
+      "baseline_sha256": "acc595e51b95bdf1d3f763663dc97e1b251a7561f2ff58a153abb05535c1dce8",
+      "final_sha256": "17bbb51f12de7f26dbe9ecd30114792ec0ffef7b681a9317d9f3746994090388"
+    },
+    {
+      "path": "src/crates/ikev2-crypto/src/lib.rs",
+      "baseline_sha256": "9ab0133836905236ce8770d7b82471fbe5e8c3fe6f1a89decca353ccd70a0a20",
+      "final_sha256": "798d70e38042ae65d5321e509f7d918914a334b6ac98fa465c1e292688aed88a"
+    },
+    {
+      "path": "src/crates/ikev2-crypto/src/protected.rs",
+      "baseline_sha256": "c07bf883ece15811c967244dfe30f98d5811bd98228ef0d4f18373b5dcb6c534",
+      "final_sha256": "ecca21606b63eebc5750becfb6b0f86a9d872346f7c825db3ce351b1f5e47d5f"
+    },
+    {
+      "path": "src/crates/ikev2-crypto/src/tests.rs",
+      "baseline_sha256": "a4656e0f858511dad5cb56dfc0eaeb07c50615aa127397322575dee5af6b0cf6",
+      "final_sha256": "6a22dd13d22494451bfe10eb2c37d4bd28c8170b863e0098d88b5252a9a648d1"
+    },
+    {
+      "path": "src/crates/ikev2-transport/Cargo.toml",
+      "baseline_sha256": "802222e975f002cff061956f4337529e1211990d472c9eaf8b6447a31bc030d8",
+      "final_sha256": "051b6826a54d2bfbeb9cd13b613abcfa817d7688bb918a2c2330e06ba39c3516"
+    },
+    {
+      "path": "src/crates/ikev2-transport/src/lib.rs",
+      "baseline_sha256": "2a491d5634156a37df19246efc64909720fb54c461d6fb0228e9d1e12dbe4bb4",
+      "final_sha256": "12094c8508129d1c933e214338e2ce207fe31801c5eb16b5fe67ca0f1de11f36"
+    },
+    {
+      "path": "src/crates/vpn-config/src/lib.rs",
+      "baseline_sha256": "01d950804a591c521cc309a2cfe6776416e88a8c95f9841148195e803db34e00",
+      "final_sha256": "57be0737cb1d2d89e999d40a892fa21a995269563213dfee2624192f0e08e5b1"
+    },
+    {
+      "path": "src/crates/xfrm-linux/Cargo.toml",
+      "baseline_sha256": null,
+      "final_sha256": "dde24aab2eed08780b51ef208c429d950054bacae7f53a9c8ee241bc233c291f"
+    },
+    {
+      "path": "src/crates/xfrm-linux/examples/kernel_echo.rs",
+      "baseline_sha256": null,
+      "final_sha256": "ecbfe01c90255a4aa94722886343e5a89870dcb87a3c95bfa4dfd91492975efb"
+    },
+    {
+      "path": "src/crates/xfrm-linux/src/lib.rs",
+      "baseline_sha256": null,
+      "final_sha256": "34b6ba8161ff1665e4c94fb6d6bcaf564c82c669b8c6d8f36a67760c409f1a34"
+    },
+    {
+      "path": "src/crates/xfrm-linux/src/socket.rs",
+      "baseline_sha256": null,
+      "final_sha256": "a00910bf96d8c9f12431c3fd546b3fd9b1a83ac2907315173def62ce5dcf7499"
+    },
+    {
+      "path": "src/crates/xfrm-linux/tests/kernel.rs",
+      "baseline_sha256": null,
+      "final_sha256": "ac0ada79413a4b209d1182b7cd1b73ebf045decdd33c1cf818fa7d9b7e51666b"
+    },
+    {
+      "path": "tools/poc/.gitignore",
+      "baseline_sha256": null,
+      "final_sha256": "32dae3052f331ee34d628ef535709b301259a45df7c7522c4d35dcf49873f00b"
+    },
+    {
+      "path": "tools/poc/cleanup_xfrm.py",
+      "baseline_sha256": null,
+      "final_sha256": "b0beebeacfc7bb9a486bc3e0ff18a8c635da06da7c8c661d69355e25062c1fdb"
+    },
+    {
+      "path": "tools/poc/ikev2-iphone-poc.service",
+      "baseline_sha256": null,
+      "final_sha256": "604348693005dc854ea1933d2288bd82b726cf80c412b75562bbe63125fb27b3"
+    },
+    {
+      "path": "tools/poc/iphone.mobileconfig",
+      "baseline_sha256": null,
+      "final_sha256": "064d7c2c7046bbdee6ec385f1c994660068300826d976b05dc75d410512b4056"
+    },
+    {
+      "path": "tools/poc/kernel_roundtrip.py",
+      "baseline_sha256": null,
+      "final_sha256": "cc662bda8ee90d592f5feb2b371ab780d7885cefb23aeacd4e0adf59b7a56950"
+    },
+    {
+      "path": "tools/poc/network.py",
+      "baseline_sha256": null,
+      "final_sha256": "2994abd07fde6fa887d7dc2ee310c3273b87418ebe41f91e4f4eb99b689a8bc3"
+    },
+    {
+      "path": "tools/poc/test_network.py",
+      "baseline_sha256": null,
+      "final_sha256": "cf5e26bb135fd27358b9d19cb1e354b30d35c59dccf55975477dad93cbe144e0"
+    }
+  ],
+  "documents_and_evidence": [
+    "docs/iphone-poc.md",
+    "features/iphone_poc_report.md",
+    "features/poc_evidence/",
+    "features/iphone_poc_scope.json"
+  ],
+  "git_actions": "No staging, commit or push"
+}

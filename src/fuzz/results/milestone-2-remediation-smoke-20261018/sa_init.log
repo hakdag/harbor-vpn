@@ -1,0 +1,53 @@
+    Blocking waiting for file lock on package cache
+    Finished `release` profile [optimized + debuginfo] target(s) in 0.01s
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on build directory
+    Finished `release` profile [optimized + debuginfo] target(s) in 0.02s
+     Running `fuzz/target/x86_64-unknown-linux-gnu/release/sa_init '-artifact_prefix=/mnt/data/projects/personal vpn/src/fuzz/artifacts/sa_init/' -max_total_time=60 '-artifact_prefix=/mnt/data/projects/personal vpn/src/fuzz/results/milestone-2-remediation-smoke-20261018/sa_init-artifacts/' -max_len=65536 -timeout=10 -rss_limit_mb=512 -seed=20261018 -detect_leaks=1 -print_final_stats=1 '/mnt/data/projects/personal vpn/src/fuzz/corpus/sa_init'`
+INFO: Running with entropic power schedule (0xFF, 100).
+INFO: Seed: 20261018
+INFO: Loaded 1 modules   (8304 inline 8-bit counters): 8304 [0x5605997525e0, 0x560599754650), 
+INFO: Loaded 1 PC tables (8304 PCs): 8304 [0x560599754650,0x560599774d50), 
+INFO:      421 files found in /mnt/data/projects/personal vpn/src/fuzz/corpus/sa_init
+INFO: seed corpus: files: 421 min: 1b max: 1029b total: 81375b rss: 54Mb
+#430	INITED cov: 1543 ft: 4370 corp: 275/50Kb exec/s: 0 rss: 96Mb
+#4533	NEW    cov: 1547 ft: 4375 corp: 276/50Kb lim: 1069 exec/s: 0 rss: 128Mb L: 270/1029 MS: 1 ChangeBit-
+#16798	NEW    cov: 1547 ft: 4376 corp: 277/50Kb lim: 1189 exec/s: 0 rss: 205Mb L: 232/1029 MS: 3 ChangeBit-ChangeBinInt-CMP- DE: "\377\377\377\377\377\377\377\037"-
+#31904	NEW    cov: 1547 ft: 4377 corp: 278/50Kb lim: 1339 exec/s: 31904 rss: 292Mb L: 232/1029 MS: 1 PersAutoDict- DE: "\377\377\377\377\377\377\377\037"-
+#34234	NEW    cov: 1547 ft: 4378 corp: 279/50Kb lim: 1359 exec/s: 34234 rss: 292Mb L: 232/1029 MS: 3 ChangeASCIIInt-ShuffleBytes-ShuffleBytes-
+#36972	REDUCE cov: 1547 ft: 4378 corp: 279/50Kb lim: 1379 exec/s: 36972 rss: 292Mb L: 168/1029 MS: 1 EraseBytes-
+#46701	REDUCE cov: 1547 ft: 4378 corp: 279/50Kb lim: 1469 exec/s: 46701 rss: 292Mb L: 115/1029 MS: 3 EraseBytes-ShuffleBytes-ShuffleBytes-
+#55239	REDUCE cov: 1547 ft: 4378 corp: 279/50Kb lim: 1549 exec/s: 55239 rss: 292Mb L: 168/1029 MS: 3 ChangeBit-ChangeBinInt-EraseBytes-
+#65536	pulse  cov: 1547 ft: 4378 corp: 279/50Kb lim: 1649 exec/s: 32768 rss: 312Mb
+#73349	NEW    cov: 1547 ft: 4379 corp: 280/51Kb lim: 1729 exec/s: 36674 rss: 312Mb L: 237/1029 MS: 2 ShuffleBytes-ChangeByte-
+#131072	pulse  cov: 1547 ft: 4379 corp: 280/51Kb lim: 2302 exec/s: 32768 rss: 317Mb
+#262144	pulse  cov: 1547 ft: 4379 corp: 280/51Kb lim: 3611 exec/s: 32768 rss: 325Mb
+#382321	REDUCE cov: 1547 ft: 4379 corp: 280/51Kb lim: 4802 exec/s: 34756 rss: 335Mb L: 84/1029 MS: 4 ShuffleBytes-ShuffleBytes-ChangeBit-EraseBytes-
+#409921	NEW    cov: 1547 ft: 4380 corp: 281/51Kb lim: 5066 exec/s: 34160 rss: 335Mb L: 57/1029 MS: 1 ChangeBit-
+#441056	NEW    cov: 1547 ft: 4384 corp: 282/55Kb lim: 5366 exec/s: 33927 rss: 335Mb L: 4339/4339 MS: 4 CopyPart-CrossOver-InsertByte-CopyPart-
+#466125	REDUCE cov: 1547 ft: 4384 corp: 282/55Kb lim: 5606 exec/s: 33294 rss: 335Mb L: 4204/4204 MS: 1 EraseBytes-
+#524288	pulse  cov: 1547 ft: 4384 corp: 282/55Kb lim: 6182 exec/s: 32768 rss: 335Mb
+#530597	REDUCE cov: 1547 ft: 4384 corp: 282/55Kb lim: 6242 exec/s: 33162 rss: 335Mb L: 92/4204 MS: 2 ChangeBinInt-EraseBytes-
+#534101	REDUCE cov: 1547 ft: 4384 corp: 282/55Kb lim: 6266 exec/s: 33381 rss: 335Mb L: 4100/4100 MS: 2 CopyPart-EraseBytes-
+#685037	REDUCE cov: 1547 ft: 4384 corp: 282/55Kb lim: 7766 exec/s: 32620 rss: 335Mb L: 96/4100 MS: 1 EraseBytes-
+#758472	REDUCE cov: 1547 ft: 4384 corp: 282/55Kb lim: 8497 exec/s: 31603 rss: 335Mb L: 232/4100 MS: 3 EraseBytes-ChangeByte-PersAutoDict- DE: "\377\377\377\377\377\377\377\037"-
+#1048576	pulse  cov: 1547 ft: 4384 corp: 282/55Kb lim: 11383 exec/s: 30840 rss: 336Mb
+#1078751	NEW    cov: 1547 ft: 4386 corp: 283/55Kb lim: 11682 exec/s: 30821 rss: 336Mb L: 236/4100 MS: 2 ChangeByte-ShuffleBytes-
+#1090272	REDUCE cov: 1547 ft: 4386 corp: 283/55Kb lim: 11786 exec/s: 30285 rss: 336Mb L: 168/4100 MS: 1 EraseBytes-
+#1223768	NEW    cov: 1547 ft: 4387 corp: 284/55Kb lim: 13112 exec/s: 30594 rss: 340Mb L: 260/4100 MS: 1 ChangeByte-
+#1295907	NEW    cov: 1547 ft: 4393 corp: 285/55Kb lim: 13827 exec/s: 30137 rss: 344Mb L: 176/4100 MS: 1 ChangeBinInt-
+#1433718	REDUCE cov: 1547 ft: 4393 corp: 285/55Kb lim: 15192 exec/s: 29259 rss: 362Mb L: 60/4100 MS: 1 EraseBytes-
+#1612003	NEW    cov: 1547 ft: 4394 corp: 286/55Kb lim: 16962 exec/s: 28785 rss: 364Mb L: 168/4100 MS: 1 ChangeBinInt-
+#1675754	REDUCE cov: 1547 ft: 4394 corp: 286/55Kb lim: 17592 exec/s: 28402 rss: 364Mb L: 96/4100 MS: 2 ChangeASCIIInt-EraseBytes-
+#1718942	DONE   cov: 1547 ft: 4394 corp: 286/55Kb lim: 18012 exec/s: 28179 rss: 364Mb
+###### Recommended dictionary. ######
+"\377\377\377\377\377\377\377\037" # Uses: 148092
+###### End of recommended dictionary. ######
+Done 1718942 runs in 61 second(s)
+stat::number_of_executed_units: 1718942
+stat::average_exec_per_sec:     28179
+stat::new_units_added:          23
+stat::slowest_unit_time_sec:    0
+stat::peak_rss_mb:              364

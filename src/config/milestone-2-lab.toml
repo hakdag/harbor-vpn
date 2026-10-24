@@ -1,0 +1,19 @@
+# Explicit opt-in lab listener only: ikev2d --serve config/milestone-2-lab.toml
+# High loopback ports avoid host capability/firewall changes.
+[udp]
+ike = "127.0.0.1:15000"
+natt = "127.0.0.1:14500"
+
+[handshake]
+max_pending = 1024
+per_source = 32
+cookie_threshold = 512
+lifetime_secs = 10
+cookie_rotation_secs = 60
+max_request_bytes = 4096
+max_response_bytes = 2048
+# Shared pre-decode admission limits across both sockets, including cached replies.
+work_per_second = 200
+work_burst = 400
+source_work_per_second = 20
+source_work_burst = 40

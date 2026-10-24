@@ -1,0 +1,9 @@
+{
+  "xml_and_plist_parse": "passed",
+  "native_iOS_installation": "not executed",
+  "profile_sha256_before_operator_substitution": "04aff0ab2de147b31f7bb5d0536314641960149a9f43e4f503ca93de24dfa2e3",
+  "required_substitutions": [
+    "SERVER_IPV4",
+    "vpn-lab.example.invalid"
+  ]
+}

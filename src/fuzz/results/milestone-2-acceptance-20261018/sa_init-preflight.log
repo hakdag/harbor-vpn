@@ -1,0 +1,77 @@
+    Finished `release` profile [optimized + debuginfo] target(s) in 0.13s
+    Finished `release` profile [optimized + debuginfo] target(s) in 0.01s
+     Running `fuzz/target/x86_64-unknown-linux-gnu/release/sa_init '-artifact_prefix=/mnt/data/projects/personal vpn/src/fuzz/artifacts/sa_init/' -runs=1 -max_len=65536 -timeout=10 -rss_limit_mb=512 -seed=20261018 -detect_leaks=1 -print_final_stats=1 '/mnt/data/projects/personal vpn/src/fuzz/corpus/sa_init'`
+INFO: Running with entropic power schedule (0xFF, 100).
+INFO: Seed: 20261018
+INFO: Loaded 1 modules   (7557 inline 8-bit counters): 7557 [0x557ee4729880, 0x557ee472b605), 
+INFO: Loaded 1 PC tables (7557 PCs): 7557 [0x557ee472b608,0x557ee4748e58), 
+INFO:      335 files found in /mnt/data/projects/personal vpn/src/fuzz/corpus/sa_init
+INFO: seed corpus: files: 335 min: 1b max: 1029b total: 68206b rss: 53Mb
+==108==LeakSanitizer has encountered a fatal error.
+==108==HINT: For debugging, try setting environment variable LSAN_OPTIONS=verbosity=1:log_threads=1
+==108==HINT: LeakSanitizer does not work under ptrace (strace, gdb, etc)
+==108==HINT: LeakSanitizer requires ptrace_scope to be disabled (e.g. echo 0 > /proc/sys/kernel/yama/ptrace_scope)
+MS: 0 ; base unit: 0000000000000000000000000000000000000000
+
+
+artifact_prefix='/mnt/data/projects/personal vpn/src/fuzz/artifacts/sa_init/'; Test unit written to /mnt/data/projects/personal vpn/src/fuzz/artifacts/sa_init/crash-da39a3ee5e6b4b0d3255bfef95601890afd80709
+Base64: 
+stat::number_of_executed_units: 85
+stat::average_exec_per_sec:     0
+stat::new_units_added:          0
+stat::slowest_unit_time_sec:    0
+stat::peak_rss_mb:              56
+==108== ERROR: libFuzzer: deadly signal
+    #0 0x557ee4604e31 in __sanitizer_print_stack_trace (/mnt/data/projects/personal vpn/src/fuzz/target/x86_64-unknown-linux-gnu/release/sa_init+0x138e31) (BuildId: b90960c89609911896f12d9462f8c13661b7175e)
+    #1 0x557ee46a4e16 in fuzzer::PrintStackTrace() /home/hakdag/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/libfuzzer-sys-0.4.13/libfuzzer/FuzzerUtil.cpp:210:38
+    #2 0x557ee4677e55 in fuzzer::Fuzzer::CrashCallback() /home/hakdag/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/libfuzzer-sys-0.4.13/libfuzzer/FuzzerLoop.cpp:231:18
+    #3 0x557ee4677e55 in fuzzer::Fuzzer::CrashCallback() /home/hakdag/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/libfuzzer-sys-0.4.13/libfuzzer/FuzzerLoop.cpp:226:6
+    #4 0x7fec2243e6ef  (/usr/lib/libc.so.6+0x3e6ef) (BuildId: d320029ad1a23be2f4bce117fd321cbd23a2014b)
+    #5 0x7fec2249a11b  (/usr/lib/libc.so.6+0x9a11b) (BuildId: d320029ad1a23be2f4bce117fd321cbd23a2014b)
+    #6 0x7fec2243e5cf in raise (/usr/lib/libc.so.6+0x3e5cf) (BuildId: d320029ad1a23be2f4bce117fd321cbd23a2014b)
+    #7 0x7fec22425684 in abort (/usr/lib/libc.so.6+0x25684) (BuildId: d320029ad1a23be2f4bce117fd321cbd23a2014b)
+    #8 0x557ee4619a5b in __sanitizer::Abort() sanitizer_posix_libcdep.cpp
+    #9 0x557ee46182dd in __sanitizer::Die() sanitizer_termination.cpp
+    #10 0x557ee462713e in __lsan::CheckForLeaks() lsan_common.cpp
+    #11 0x557ee4627306 in __lsan::DoRecoverableLeakCheck() lsan_common.cpp
+    #12 0x557ee4678a43 in fuzzer::Fuzzer::TryDetectingAMemoryLeak(unsigned char const*, unsigned long, bool) /home/hakdag/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/libfuzzer-sys-0.4.13/libfuzzer/FuzzerLoop.cpp:712:43
+    #13 0x557ee4678a43 in fuzzer::Fuzzer::TryDetectingAMemoryLeak(unsigned char const*, unsigned long, bool) /home/hakdag/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/libfuzzer-sys-0.4.13/libfuzzer/FuzzerLoop.cpp:680:6
+    #14 0x557ee4680cc9 in fuzzer::Fuzzer::ReadAndExecuteSeedCorpora(std::vector<fuzzer::SizedFile, std::allocator<fuzzer::SizedFile>>&) /home/hakdag/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/libfuzzer-sys-0.4.13/libfuzzer/FuzzerLoop.cpp:838:30
+    #15 0x557ee4681966 in fuzzer::Fuzzer::Loop(std::vector<fuzzer::SizedFile, std::allocator<fuzzer::SizedFile>>&) /home/hakdag/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/libfuzzer-sys-0.4.13/libfuzzer/FuzzerLoop.cpp:872:28
+    #16 0x557ee466a60f in fuzzer::FuzzerDriver(int*, char***, int (*)(unsigned char const*, unsigned long)) /home/hakdag/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/libfuzzer-sys-0.4.13/libfuzzer/FuzzerDriver.cpp:923:10
+    #17 0x557ee46570a2 in main /home/hakdag/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/libfuzzer-sys-0.4.13/libfuzzer/FuzzerMain.cpp:20:30
+    #18 0x7fec22427780  (/usr/lib/libc.so.6+0x27780) (BuildId: d320029ad1a23be2f4bce117fd321cbd23a2014b)
+    #19 0x7fec224278b8 in __libc_start_main (/usr/lib/libc.so.6+0x278b8) (BuildId: d320029ad1a23be2f4bce117fd321cbd23a2014b)
+    #20 0x557ee4566164 in _start (/mnt/data/projects/personal vpn/src/fuzz/target/x86_64-unknown-linux-gnu/release/sa_init+0x9a164) (BuildId: b90960c89609911896f12d9462f8c13661b7175e)
+
+NOTE: libFuzzer has rudimentary signal handlers.
+      Combine libFuzzer with AddressSanitizer or similar for better crash reports.
+SUMMARY: libFuzzer: deadly signal
+MS: 0 ; base unit: 0000000000000000000000000000000000000000
+
+
+artifact_prefix='/mnt/data/projects/personal vpn/src/fuzz/artifacts/sa_init/'; Test unit written to /mnt/data/projects/personal vpn/src/fuzz/artifacts/sa_init/crash-da39a3ee5e6b4b0d3255bfef95601890afd80709
+Base64: 
+stat::number_of_executed_units: 85
+stat::average_exec_per_sec:     0
+stat::new_units_added:          0
+stat::slowest_unit_time_sec:    0
+stat::peak_rss_mb:              56
+
+────────────────────────────────────────────────────────────────────────────────
+
+Failing input:
+
+	fuzz/artifacts/sa_init/crash-da39a3ee5e6b4b0d3255bfef95601890afd80709
+
+Reproduce with:
+
+	cargo fuzz run sa_init fuzz/artifacts/sa_init/crash-da39a3ee5e6b4b0d3255bfef95601890afd80709
+
+Minimize test case with:
+
+	cargo fuzz tmin sa_init fuzz/artifacts/sa_init/crash-da39a3ee5e6b4b0d3255bfef95601890afd80709
+
+────────────────────────────────────────────────────────────────────────────────
+
+Error: Fuzz target exited with exit status: 77

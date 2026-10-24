@@ -1,0 +1,7 @@
+    Checking ikev2-crypto v0.1.0 (/mnt/data/projects/personal vpn/src/crates/ikev2-crypto)
+    Checking vpn-auth v0.1.0 (/mnt/data/projects/personal vpn/src/crates/vpn-auth)
+    Checking ikev2-core v0.1.0 (/mnt/data/projects/personal vpn/src/crates/ikev2-core)
+    Checking ikev2-transport v0.1.0 (/mnt/data/projects/personal vpn/src/crates/ikev2-transport)
+    Checking vpn-config v0.1.0 (/mnt/data/projects/personal vpn/src/crates/vpn-config)
+    Checking ikev2d v0.1.0 (/mnt/data/projects/personal vpn/src/bins/ikev2d)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.49s

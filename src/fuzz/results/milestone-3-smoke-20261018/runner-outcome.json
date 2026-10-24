@@ -1,0 +1,7 @@
+{
+  "runner_exit_status": 1,
+  "campaign_started": false,
+  "instrumented_exit_status": 77,
+  "cargo_fuzz_exit_status": 1,
+  "cause": "LeakSanitizer could not inspect threads under sandbox ptrace restrictions; unrestricted reruns retain leak detection."
+}

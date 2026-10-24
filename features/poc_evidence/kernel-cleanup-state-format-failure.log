@@ -1,0 +1,22 @@
+   Compiling xfrm-linux v0.1.0 (/mnt/data/projects/personal vpn/src/crates/xfrm-linux)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.17s
+     Running tests/kernel.rs (src/target/debug/deps/kernel-696b2f2e25ca84e4)
+
+running 1 test
+Owned candidates: 0 ESP states, 3 policies. Stop daemon first. Deleting.
+
+thread 'kernel_install_collision_rollback_and_owned_delete' (440651) panicked at crates/xfrm-linux/tests/kernel.rs:70:5:
+assertion `left == right` failed
+  left: "\t SAD count 2\n"
+ right: "\t SAD count 0\n"
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+test kernel_install_collision_rollback_and_owned_delete ... FAILED
+
+failures:
+
+failures:
+    kernel_install_collision_rollback_and_owned_delete
+
+test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.07s
+
+error: test failed, to rerun pass `-p xfrm-linux --test kernel`

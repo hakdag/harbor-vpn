@@ -1,0 +1,157 @@
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.04s
+     Running unittests src/lib.rs (target/debug/deps/ikev2_core-9ae5aa9bf077ad9b)
+
+running 1 test
+test responder::tests::stored_responder_keys_match_independent_initiator_exchange ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/handshake.rs (target/debug/deps/handshake-e02022bfaa7013ed)
+
+running 13 tests
+test codec_limits_must_allow_mandatory_response ... ok
+test invalid_policy_and_oversize ... ok
+test proposal_policy_and_invalid_ke_notifications ... ok
+test entropy_failure_is_fail_closed_without_pending_state ... ok
+test malformed_truncation_notify_missing_and_duplicate_payloads ... ok
+test multiple_source_nat_hashes_and_bad_cookie_or_cookie_position ... ok
+test cookie_is_stateless_independent_golden_and_context_bound ... ok
+test real_provider_rejects_invalid_point_and_detects_nat ... ok
+test select_only_approved_alternative_preserves_proposal_number ... ok
+test initial_state_validation_unknowns_reordering_and_conflicts ... ok
+test cookie_rotation_previous_key_and_expired_key ... ok
+test golden_exchange_duplicate_and_expiry ... ok
+test burst_caps_and_verified_cookie_cannot_exceed_capacity ... ok
+
+test result: ok. 13 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+     Running unittests src/lib.rs (target/debug/deps/ikev2_crypto-5d1e54179d62b0b6)
+
+running 5 tests
+test tests::rfc4231_hmac_sha256_case1 ... ok
+test tests::nist_aes256_gcm_zero_key_vector_and_no_unauthenticated_plaintext ... ok
+test tests::independent_python_schedule_and_nat_vector ... ok
+test tests::rfc5903_group19_and_invalid_points ... ok
+test tests::real_random_ephemeral_exchange_and_redaction ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/deps/ikev2_transport-e89e3d373faa01d6)
+
+running 1 test
+test tests::framing_marker_keepalive_and_esp ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/loopback.rs (target/debug/deps/loopback-8b9a3f721f0103b5)
+
+running 2 tests
+test wildcard_listener_is_rejected_without_binding ... ok
+test unprivileged_ipv4_udp_channels_real_ecdh_and_nat_metadata ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running unittests src/lib.rs (target/debug/deps/ikev2_wire-edfdfac94be83437)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/codec.rs (target/debug/deps/codec-31fc458ac095a414)
+
+running 17 tests
+test duplicate_attributes_and_adjusted_length_truncations ... ok
+test encrypted_next_is_inner_and_unsupported ... ok
+test empty_message_and_structural_response_proposal_number ... ok
+test multiple_proposals_and_malformed_numbering ... ok
+test notify_vendor_golden_fields_and_bytes ... ok
+test independent_golden_decode_and_encode ... ok
+test raw_decode_is_separate_from_body_validation ... ok
+test nonce_boundaries_and_tlv ... ok
+test reserved_bits_are_ignored_and_normalized ... ok
+test serializer_rejects_invalid_models_and_small_output ... ok
+test unknown_noncritical_payload_continues_chain_and_opaque_coverage_is_explicit ... ok
+test truncation_at_every_byte ... ok
+test valid_spi_sizes_unknown_protocol_and_notify_spi ... ok
+test unknown_payloads_versions_and_algorithms_are_not_malformed ... ok
+test malformed_envelopes_and_nested_fields ... ok
+test generated_typed_messages_round_trip ... ok
+test arbitrary_input_never_panics ... ok
+
+test result: ok. 17 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.25s
+
+     Running tests/limits.rs (target/debug/deps/limits-5bd977429d9436a8)
+
+running 4 tests
+test invalid_sa_models_are_rejected ... ok
+test every_policy_field_has_a_hard_ceiling_and_lower_bound ... ok
+test message_size_at_ceiling_and_beyond ... ok
+test each_element_limit_accepts_boundary_and_rejects_one_more ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/main.rs (target/debug/deps/ikev2d-f6f436c33ad0649d)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/cli.rs (target/debug/deps/cli-e3888983a75a0a93)
+
+running 2 tests
+test default_is_offline_and_serve_requires_config ... ok
+test opt_in_cli_serves_initial_exchange_on_unprivileged_loopback ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running unittests src/lib.rs (target/debug/deps/vpn_config-09d4f96b23abe94f)
+
+running 3 tests
+test tests::defaults_and_overrides ... ok
+test tests::reject_invalid_or_unknown_settings ... ok
+test handshake_tests::safe_limits_and_unicast_binds ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/deps/vpn_observability-9e08bfd260d60022)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests ikev2_core
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests ikev2_crypto
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests ikev2_transport
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests ikev2_wire
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests vpn_config
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests vpn_observability
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+

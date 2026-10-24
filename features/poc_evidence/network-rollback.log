@@ -1,0 +1,3 @@
+Apply: scoped setup; 13 iptables operations
+Apply: scoped cleanup; 13 iptables operations
+Scoped iptables/NAT setup and rollback preserve sentinel and prior forwarding: PASS

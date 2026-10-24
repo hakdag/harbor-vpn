@@ -1,0 +1,7 @@
+{
+  "runner_exit_code": 1,
+  "preflight_cargo_exit_code": 1,
+  "preflight_underlying_libfuzzer_exit_code": 77,
+  "long_campaign_started": false,
+  "reason": "LeakSanitizer fatal tracing error in sandbox; no sanitizer disabled; separate unrestricted rerun retained"
+}

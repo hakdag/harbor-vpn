@@ -1,0 +1,18 @@
+{
+  "head": "190dc5f07f345df36cf68a5de24a108fd6fc83b9",
+  "tracked_worktree_sha256": {
+    "README.md": "fd542cb1cdef3164c7162917f6cc55b14f1fb368730ec54047abff54d1fc16ff",
+    "docs/decision-register.md": "508a32cf5556aa8d3d1f56653a8ec997f1c5c8ae802e9d5d4210152507e14e66",
+    "src/Cargo.lock": "0747b267857f580997c758bfb43c9e27bbb40ce8e8324c840761c7e75792ff3e",
+    "src/Cargo.toml": "f07a1ea9a0d267ecde91664670158c5accfbbe2f640abc27e5444c1a791b8637",
+    "src/bins/ikev2d/Cargo.toml": "a45456b18e92e9b0e3a55a36545209a3390c7218668fbc7231c6dd1733f7b01b",
+    "src/bins/ikev2d/src/main.rs": "c400f0769e99b20692889c62841b5f230be45f844ce1c208c7d1ab4645d53e3b",
+    "src/crates/vpn-config/Cargo.toml": "1647a352e99c21f676421e10cad832c2509e8bc8b7746a6de7f3989aa9c59697",
+    "src/crates/vpn-config/src/lib.rs": "27803d1648031beb210d29e8e20ce6c19ff05dc5a03c59e7fe0e9fbf1f4c96df",
+    "src/fuzz/.gitignore": "b659028e257e0eb75025d0694455c783f35de34d7f9452dc19c53fcdfe397ee6",
+    "src/fuzz/Cargo.lock": "50c579601404a6b7e7d39aeee583052342b333b4adf24c1605de698e32049b8e",
+    "src/fuzz/Cargo.toml": "03c5f9e268042b823d90e0e170d7142d5a229332ccc3b64c196777d47c1f63a9",
+    "src/fuzz/README.md": "148cd5f9ef674c2996c71f3fd2efb0b6661f385563539188f48ffb13f2b53fe7",
+    "src/fuzz/run_campaign.py": "cd74384dc3b042e7173666907397ae61024e08008956024a0c1286ff55938adb"
+  }
+}

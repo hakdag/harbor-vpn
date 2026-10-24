@@ -1,8 +1,8 @@
-# IKEv2 codec fuzzing
+# IKEv2 codec and initial-exchange fuzzing
 
 The runner explicitly enables AddressSanitizer and leak detection, with no changes to host tracing settings. It first verifies sanitizer exit checks in one-run preflights and refuses a long campaign if a preflight fails. Run it in an environment permitting LeakSanitizer tracing.
 
-The application and ordinary tests use stable Rust. These isolated libFuzzer targets use nightly and AddressSanitizer through cargo-fuzz; they perform no network or protocol actions.
+The application and ordinary tests use stable Rust. These isolated libFuzzer targets use nightly and AddressSanitizer through cargo-fuzz; they perform no network I/O. The initial-exchange target drives the offline responder.
 
 Run the following commands from the repository’s `src/` directory.
 
@@ -20,6 +20,16 @@ Targets:
 - `message`: raw and typed complete-message decoding, support checks, bounded serialize/reparse and deterministic re-encoding. Also patches the outer length in a copy to reach deeper structural parsing after mutation.
 - `sa`: standalone SA structures, nested lengths/counts/markers/attributes, and serialize/reparse when the body fits a full message.
 - `structured`: typed payload construction from fuzz bytes, including valid and invalid models, variable resource policy and encode/decode/encode invariants.
+- `sa_init`: malformed/length-patched requests through the real provider and both framing paths; bounded response decoding, exact duplicate caching, load-triggered cookie echo/retry, bounded pending count and expiry.
+- `crypto_peer`: arbitrary P-256 shares, valid-share ECDH, bounded key schedule/AES-GCM round trips, tampered tags and arbitrary ciphertext rejection. Fixed synthetic shared material exists only in this fuzz harness; production uses fresh ECDH.
+
+The default runner target set remains the three Milestone 1 codec targets. Select all five explicitly for Milestone 2:
+
+```sh
+python3 fuzz/run_campaign.py --seconds 60 --targets message sa structured sa_init crypto_peer --results fuzz/results/NEW-M2-SMOKE
+```
+
+The runner copies checked-in seeds automatically. Sixty seconds per target is a smoke check, not a replacement for a longer scheduled campaign. New-target execution reaches real OpenSSL through FFI; the dynamically linked system library is not rebuilt with sanitizer instrumentation, so this does not establish complete internal OpenSSL memory coverage.
 
 Checked-in `seeds/` are synthetic independent fixtures and malformed examples, without credentials or live traffic. `corpus/` holds the mutable coverage corpus. Cargo-fuzz creates missing corpus directories automatically; copy seeds when starting clean:
 
@@ -45,3 +55,7 @@ The recorded 30-minute runs completed their fuzz loops but then exited 1 because
 The full-duration clean-exit rerun is retained under `results/milestone-1-acceptance-20261017/`. That directory is separate from the original sandbox-failed evidence. Its sanitizer logs are explicitly included in the approved checkpoint; mutable corpus, binaries and crash artifacts remain excluded. See the repository’s `features/milestone_1_verification.md` for results and checkpoint scope.
 
 Acceptance rerun outcome: all three targets completed 1,801 seconds and exited 0 with AddressSanitizer and LeakSanitizer enabled; 1,166,366,909 executions combined, no reported findings. Source hashes were unchanged. The earlier tracing limitation is closed for the full-duration rerun.
+
+## Milestone 2 smoke evidence
+
+`results/milestone-2-smoke-20261017/` records the first five-target smoke campaign. After adding rejection-category counters, constructor-limit coverage and stateful cookie retries to the fuzz harness, `results/milestone-2-final-smoke-20261017/` records the final-source campaign. Both retain source/binary/corpus hashes, exact commands, preflight and run exit codes, statistics and raw sanitizer logs. See `features/milestone_2_report.md` from the repository root for the final counts and remaining validation gates. Neither run is a 30-minute Milestone 2 campaign or native-client interoperability test.

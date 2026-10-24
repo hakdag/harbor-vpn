@@ -1,0 +1,13 @@
+[package]
+name = "xfrm-linux"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+[lints.rust]
+unsafe_code = "deny"
+[dependencies]
+ikev2-core.workspace = true
+ikev2-crypto.workspace = true
+rustix = { version = "1", features = ["net"] }
+libc = "0.2"
+zeroize.workspace = true

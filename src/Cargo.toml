@@ -1,5 +1,5 @@
 [workspace]
-members = ["crates/ikev2-wire", "crates/vpn-config", "crates/vpn-observability", "bins/ikev2d"]
+members = ["crates/xfrm-linux", "crates/vpn-auth", "crates/ikev2-wire", "crates/vpn-config", "crates/vpn-observability", "bins/ikev2d", "crates/ikev2-crypto", "crates/ikev2-core", "crates/ikev2-transport"]
 exclude = ["fuzz"]
 resolver = "3"
 
@@ -9,6 +9,13 @@ rust-version = "1.97"
 version = "0.1.0"
 
 [workspace.dependencies]
+xfrm-linux = { path = "crates/xfrm-linux" }
+vpn-auth = { path = "crates/vpn-auth" }
+ikev2-crypto = { path = "crates/ikev2-crypto" }
+ikev2-core = { path = "crates/ikev2-core" }
+ikev2-transport = { path = "crates/ikev2-transport" }
+openssl = "0.10"
+zeroize = "1"
 ikev2-wire = { path = "crates/ikev2-wire" }
 vpn-config = { path = "crates/vpn-config" }
 vpn-observability = { path = "crates/vpn-observability" }

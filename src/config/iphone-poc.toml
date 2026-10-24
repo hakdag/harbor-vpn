@@ -1,0 +1,23 @@
+# Replace with the actual local unicast interface IPv4 (not an unassigned public NAT IP).
+# No secrets in this file. Operator manages routing/firewall and systemd credentials.
+[udp]
+ike = "192.0.2.10:500"
+natt = "192.0.2.10:4500"
+[handshake]
+max_request_bytes = 16384
+max_response_bytes = 16384
+max_pending = 64
+per_source = 8
+cookie_threshold = 32
+[authentication]
+enabled = true
+[poc]
+enabled = true
+# A conflict-free private /24; never allocate server/LAN/Docker addresses.
+pool_start = "10.77.0.10"
+pool_end = "10.77.0.20"
+dns = ["1.1.1.1", "1.0.0.1"]
+lifetime_secs = 1800
+# Reserve this entire range for this one daemon: 65536..131071.
+reqid_start = 65536
+policy_priority = 10000

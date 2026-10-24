@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+	<key>PayloadIdentifier</key>
+	<string>biz.hypervault.iphone-poc</string>
+	<key>PayloadUUID</key>
+	<string>F3DC5129-8DD3-498A-A0A0-D1DCE571D06A</string>
+	<key>PayloadDisplayName</key>
+	<string>Harbor IPv4 PoC (disposable test)</string>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>PayloadType</key>
+			<string>com.apple.vpn.managed</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>PayloadIdentifier</key>
+			<string>biz.hypervault.iphone-poc.vpn</string>
+			<key>PayloadUUID</key>
+			<string>E0FA7A8B-AA51-4C23-B670-6446C481772F</string>
+			<key>PayloadDisplayName</key>
+			<string>Harbor IPv4 PoC</string>
+			<key>UserDefinedName</key>
+			<string>Harbor IPv4 PoC</string>
+			<key>VPNType</key>
+			<string>IKEv2</string>
+			<key>OnDemandEnabled</key>
+			<integer>0</integer>
+			<key>IKEv2</key>
+			<dict>
+				<key>RemoteAddress</key>
+				<string>vpn.hypervault.biz</string>
+				<key>RemoteIdentifier</key>
+				<string>vpn.hypervault.biz</string>
+				<key>LocalIdentifier</key>
+				<string>m3-disposable</string>
+				<key>AuthenticationMethod</key>
+				<string>None</string>
+				<key>ExtendedAuthEnabled</key>
+				<integer>1</integer>
+				<key>AuthName</key>
+				<string>m3-disposable</string>
+				<key>DeadPeerDetectionRate</key>
+				<string>Medium</string>
+				<key>DisableMOBIKE</key>
+				<integer>1</integer>
+				<key>DisableRedirect</key>
+				<integer>1</integer>
+				<key>EnablePFS</key>
+				<integer>0</integer>
+				<key>IKESecurityAssociationParameters</key>
+				<dict>
+					<key>EncryptionAlgorithm</key>
+					<string>AES-256-GCM</string>
+					<key>IntegrityAlgorithm</key>
+					<string>SHA2-256</string>
+					<key>DiffieHellmanGroup</key>
+					<integer>19</integer>
+					<key>LifeTimeInMinutes</key>
+					<integer>60</integer>
+				</dict>
+				<key>ChildSecurityAssociationParameters</key>
+				<dict>
+					<key>EncryptionAlgorithm</key>
+					<string>AES-256-GCM</string>
+					<key>IntegrityAlgorithm</key>
+					<string>SHA2-256</string>
+					<key>LifeTimeInMinutes</key>
+					<integer>30</integer>
+				</dict>
+				<key>MTU</key>
+				<integer>1280</integer>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

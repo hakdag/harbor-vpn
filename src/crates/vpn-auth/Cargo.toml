@@ -1,0 +1,16 @@
+[package]
+name = "vpn-auth"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+[lints]
+workspace = true
+[dependencies]
+rustix = { version = "1", features = ["fs", "process"] }
+ikev2-crypto.workspace = true
+ikev2-wire.workspace = true
+openssl.workspace = true
+zeroize.workspace = true
+
+[dev-dependencies]
+tempfile = "3"

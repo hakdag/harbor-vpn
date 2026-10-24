@@ -1,0 +1,9 @@
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.03s
+     Running tests/kernel.rs (src/target/debug/deps/kernel-696b2f2e25ca84e4)
+
+running 1 test
+Owned candidates: 2 ESP states, 3 policies. Stop daemon first. Deleting.
+test kernel_install_collision_rollback_and_owned_delete ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.09s
+

@@ -1,0 +1,66 @@
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.04s
+     Running unittests src/lib.rs (target/debug/deps/ikev2_core-9ae5aa9bf077ad9b)
+
+running 1 test
+test responder::tests::stored_responder_keys_match_independent_initiator_exchange ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/handshake.rs (target/debug/deps/handshake-e02022bfaa7013ed)
+
+running 13 tests
+test codec_limits_must_allow_mandatory_response ... ok
+test invalid_policy_and_oversize ... ok
+test proposal_policy_and_invalid_ke_notifications ... ok
+test malformed_truncation_notify_missing_and_duplicate_payloads ... ok
+test entropy_failure_is_fail_closed_without_pending_state ... ok
+test golden_exchange_duplicate_and_expiry ... ok
+test select_only_approved_alternative_preserves_proposal_number ... ok
+test multiple_source_nat_hashes_and_bad_cookie_or_cookie_position ... ok
+test cookie_is_stateless_independent_golden_and_context_bound ... ok
+test real_provider_rejects_invalid_point_and_detects_nat ... ok
+test initial_state_validation_unknowns_reordering_and_conflicts ... ok
+test cookie_rotation_previous_key_and_expired_key ... ok
+test burst_caps_and_verified_cookie_cannot_exceed_capacity ... ok
+
+test result: ok. 13 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.03s
+
+     Running unittests src/lib.rs (target/debug/deps/ikev2_crypto-5d1e54179d62b0b6)
+
+running 5 tests
+test tests::independent_python_schedule_and_nat_vector ... ok
+test tests::rfc5903_group19_and_invalid_points ... ok
+test tests::rfc4231_hmac_sha256_case1 ... ok
+test tests::nist_aes256_gcm_zero_key_vector_and_no_unauthenticated_plaintext ... ok
+test tests::real_random_ephemeral_exchange_and_redaction ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/deps/ikev2_transport-e89e3d373faa01d6)
+
+running 1 test
+test tests::framing_marker_keepalive_and_esp ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/loopback.rs (target/debug/deps/loopback-8b9a3f721f0103b5)
+
+running 2 tests
+test wildcard_listener_is_rejected_without_binding ... ok
+test unprivileged_ipv4_udp_channels_real_ecdh_and_nat_metadata ... FAILED
+
+failures:
+
+---- unprivileged_ipv4_udp_channels_real_ecdh_and_nat_metadata stdout ----
+
+thread 'unprivileged_ipv4_udp_channels_real_ecdh_and_nat_metadata' (92) panicked at crates/ikev2-transport/tests/loopback.rs:31:6:
+called `Result::unwrap()` on an `Err` value: Os { code: 1, kind: PermissionDenied, message: "Operation not permitted" }
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+
+
+failures:
+    unprivileged_ipv4_udp_channels_real_ecdh_and_nat_metadata
+
+test result: FAILED. 1 passed; 1 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+error: test failed, to rerun pass `-p ikev2-transport --test loopback`

@@ -1,0 +1,89 @@
+{
+  "executed_utc": "2026-10-18T08:08:33.201771+00:00",
+  "checks": [
+    {
+      "command": [
+        "cargo",
+        "fmt",
+        "--all",
+        "--",
+        "--check"
+      ],
+      "cwd": "src",
+      "exit_code": 0,
+      "log": "workspace-format.log"
+    },
+    {
+      "command": [
+        "cargo",
+        "fmt",
+        "--manifest-path",
+        "fuzz/Cargo.toml",
+        "--all",
+        "--",
+        "--check"
+      ],
+      "cwd": "src",
+      "exit_code": 0,
+      "log": "fuzz-format.log"
+    },
+    {
+      "command": [
+        "cargo",
+        "clippy",
+        "--workspace",
+        "--all-targets",
+        "--",
+        "-D",
+        "warnings"
+      ],
+      "cwd": "src",
+      "exit_code": 0,
+      "log": "clippy.log"
+    },
+    {
+      "command": [
+        "cargo",
+        "test",
+        "--workspace"
+      ],
+      "cwd": "src",
+      "exit_code": 0,
+      "environment": "outside sandbox; loopback sockets permitted",
+      "passed_tests": 61,
+      "log": "workspace-tests.log"
+    },
+    {
+      "command": [
+        "python3",
+        "features/milestone_2_remediation_evidence/protocol_probe.py"
+      ],
+      "exit_code": 0,
+      "environment": "outside sandbox; unprivileged loopback",
+      "result": "Both CERTREQ variants receive successful INIT; daemon deliberately stopped via SIGTERM (-15)"
+    },
+    {
+      "command": [
+        "python3",
+        "fuzz/run_campaign.py",
+        "--seconds",
+        "60",
+        "--seed",
+        "20261018",
+        "--targets",
+        "sa_init",
+        "crypto_peer",
+        "--results",
+        "fuzz/results/milestone-2-remediation-smoke-20261018"
+      ],
+      "cwd": "src",
+      "exit_code": 0,
+      "environment": "outside sandbox; ASan/LSan enabled"
+    }
+  ],
+  "development_limitations": [
+    "Initial test-fixture borrow conflict corrected before final validation",
+    "Sandbox denied loopback sockets in initial workspace run (exit 101); unrestricted final run exit 0",
+    "Nightly cargo-fmt absent (exit 1); stable rustfmt verifies both manifests"
+  ]
+}

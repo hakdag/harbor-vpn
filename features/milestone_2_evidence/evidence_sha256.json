@@ -1,0 +1,11 @@
+{
+  "fmt.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "clippy.log": "99f71393b9903dca098310bb446022a4bdee195ea9996f351a787195555210a6",
+  "test.log": "278296f22c95ff9c5bc9f379b353ec755b03d899bc718e6e91d9032410847a3f",
+  "test-unrestricted.log": "54e3e0f4a313c4cc11c5c6535e58dfc457104c0527912751a6b0d7a0bf1d05cd",
+  "protocol_probe.py": "fed6c9fef06849fefbf15b2d2326406315aaf1c21060d42d9eebc0af8efe5e65",
+  "protocol_probe.json": "1e34c949eccc1bbd43c07bbf25bd5a6e8457e1b30a8623c8f6c1c4471786f4cd",
+  "ios-init-only.mobileconfig": "04aff0ab2de147b31f7bb5d0536314641960149a9f43e4f503ca93de24dfa2e3",
+  "profile_validation.json": "e83432241048192132f413e9df4b4b175efcde2726ca69ef4397a3941fd86a03",
+  "local_checks.json": "2e297fe4e8ad0be0c35dadcb86cefd2178a1e6b14bb5fda2d083e6e5b07bcff5"
+}

@@ -1,0 +1,30 @@
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on build directory
+    Finished `release` profile [optimized + debuginfo] target(s) in 0.02s
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Finished `release` profile [optimized + debuginfo] target(s) in 0.01s
+     Running `fuzz/target/x86_64-unknown-linux-gnu/release/sa '-artifact_prefix=/mnt/data/projects/personal vpn/src/fuzz/artifacts/sa/' -max_total_time=60 '-artifact_prefix=/mnt/data/projects/personal vpn/src/fuzz/results/milestone-2-smoke-20261017/sa-artifacts/' -max_len=65536 -timeout=10 -rss_limit_mb=512 -seed=20261017 -detect_leaks=1 -print_final_stats=1 '/mnt/data/projects/personal vpn/src/fuzz/corpus/sa'`
+INFO: Running with entropic power schedule (0xFF, 100).
+INFO: Seed: 20261017
+INFO: Loaded 1 modules   (2182 inline 8-bit counters): 2182 [0x55d0319581b0, 0x55d031958a36), 
+INFO: Loaded 1 PC tables (2182 PCs): 2182 [0x55d031958a38,0x55d031961298), 
+INFO:      211 files found in /mnt/data/projects/personal vpn/src/fuzz/corpus/sa
+INFO: seed corpus: files: 211 min: 1b max: 130b total: 9264b rss: 41Mb
+#212	INITED cov: 376 ft: 842 corp: 86/3632b exec/s: 0 rss: 45Mb
+#1048576	pulse  cov: 376 ft: 842 corp: 86/3632b lim: 10561 exec/s: 349525 rss: 335Mb
+#2097152	pulse  cov: 376 ft: 842 corp: 86/3632b lim: 21005 exec/s: 349525 rss: 335Mb
+#4194304	pulse  cov: 376 ft: 842 corp: 86/3632b lim: 41899 exec/s: 349525 rss: 335Mb
+#8388608	pulse  cov: 376 ft: 842 corp: 86/3632b lim: 65536 exec/s: 349525 rss: 335Mb
+#16777216	pulse  cov: 376 ft: 842 corp: 86/3632b lim: 65536 exec/s: 335544 rss: 335Mb
+#20025757	DONE   cov: 376 ft: 842 corp: 86/3632b lim: 65536 exec/s: 328291 rss: 335Mb
+Done 20025757 runs in 61 second(s)
+stat::number_of_executed_units: 20025757
+stat::average_exec_per_sec:     328291
+stat::new_units_added:          0
+stat::slowest_unit_time_sec:    0
+stat::peak_rss_mb:              335

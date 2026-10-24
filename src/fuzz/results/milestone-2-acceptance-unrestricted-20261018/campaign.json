@@ -1,0 +1,76 @@
+[
+  {
+    "target": "sa_init",
+    "command": [
+      "cargo",
+      "+nightly",
+      "fuzz",
+      "run",
+      "--sanitizer",
+      "address",
+      "sa_init",
+      "--",
+      "-max_total_time=1800",
+      "-artifact_prefix=/mnt/data/projects/personal vpn/src/fuzz/results/milestone-2-acceptance-unrestricted-20261018/sa_init-artifacts/",
+      "-max_len=65536",
+      "-timeout=10",
+      "-rss_limit_mb=512",
+      "-seed=20261018",
+      "-detect_leaks=1",
+      "-print_final_stats=1"
+    ],
+    "started_utc": "2026-10-18T07:20:32.575519+00:00",
+    "log": "fuzz/results/milestone-2-acceptance-unrestricted-20261018/sa_init.log",
+    "ended_utc": "2026-10-18T07:50:33.848873+00:00",
+    "wall_seconds": 1801.274,
+    "exit_status": 0,
+    "completed_fuzz_seconds": 1801,
+    "statistics": {
+      "number_of_executed_units": 15814991,
+      "average_exec_per_sec": 8781,
+      "new_units_added": 107,
+      "slowest_unit_time_sec": 0,
+      "peak_rss_mb": 409
+    },
+    "sanitizer_diagnostics": [],
+    "log_sha256": "8e97320282a7f3723ae18153d7730af30b6dcbd99b29285b6a075eca3f04e6ff",
+    "passed": true
+  },
+  {
+    "target": "crypto_peer",
+    "command": [
+      "cargo",
+      "+nightly",
+      "fuzz",
+      "run",
+      "--sanitizer",
+      "address",
+      "crypto_peer",
+      "--",
+      "-max_total_time=1800",
+      "-artifact_prefix=/mnt/data/projects/personal vpn/src/fuzz/results/milestone-2-acceptance-unrestricted-20261018/crypto_peer-artifacts/",
+      "-max_len=65536",
+      "-timeout=10",
+      "-rss_limit_mb=512",
+      "-seed=20261018",
+      "-detect_leaks=1",
+      "-print_final_stats=1"
+    ],
+    "started_utc": "2026-10-18T07:20:32.575933+00:00",
+    "log": "fuzz/results/milestone-2-acceptance-unrestricted-20261018/crypto_peer.log",
+    "ended_utc": "2026-10-18T07:50:33.849333+00:00",
+    "wall_seconds": 1801.274,
+    "exit_status": 0,
+    "completed_fuzz_seconds": 1801,
+    "statistics": {
+      "number_of_executed_units": 15377630,
+      "average_exec_per_sec": 8538,
+      "new_units_added": 5,
+      "slowest_unit_time_sec": 0,
+      "peak_rss_mb": 512
+    },
+    "sanitizer_diagnostics": [],
+    "log_sha256": "2ef8fd2aee6562c2ae41d1eaa8baa43bf456ee0cf712d090f1d1b7f0fcece5a0",
+    "passed": true
+  }
+]

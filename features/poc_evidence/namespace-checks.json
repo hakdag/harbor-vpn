@@ -1,0 +1,60 @@
+[
+  {
+    "command": [
+      "unshare",
+      "--user",
+      "--map-root-user",
+      "--net",
+      "env",
+      "POC_ISOLATED_XFRM_TEST=1",
+      "POC_PARENT_NETNS=net:[4026531833]",
+      "cargo",
+      "test",
+      "--manifest-path",
+      "src/Cargo.toml",
+      "-p",
+      "xfrm-linux",
+      "--test",
+      "kernel",
+      "--offline",
+      "--",
+      "--ignored",
+      "--nocapture"
+    ],
+    "exit_status": 0,
+    "wall_seconds": 0.148,
+    "log": "kernel-final.log"
+  },
+  {
+    "command": [
+      "unshare",
+      "--user",
+      "--map-root-user",
+      "--net",
+      "env",
+      "POC_ISOLATED_XFRM_TEST=1",
+      "POC_PARENT_NETNS=net:[4026531833]",
+      "python3",
+      "tools/poc/kernel_roundtrip.py"
+    ],
+    "exit_status": 0,
+    "wall_seconds": 0.244,
+    "log": "kernel-roundtrip-final.log"
+  },
+  {
+    "command": [
+      "unshare",
+      "--user",
+      "--map-root-user",
+      "--net",
+      "env",
+      "POC_ISOLATED_XFRM_TEST=1",
+      "POC_PARENT_NETNS=net:[4026531833]",
+      "python3",
+      "tools/poc/test_network.py"
+    ],
+    "exit_status": 0,
+    "wall_seconds": 0.264,
+    "log": "network-rollback-final.log"
+  }
+]
