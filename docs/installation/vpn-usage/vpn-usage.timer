@@ -1,0 +1,12 @@
+[Unit]
+Description=Sample HyperVault VPN traffic every minute
+
+[Timer]
+OnBootSec=1min
+OnUnitActiveSec=1min
+AccuracySec=10s
+Persistent=true
+Unit=vpn-usage.service
+
+[Install]
+WantedBy=timers.target
